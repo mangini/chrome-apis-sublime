@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[
+{
+  "name": "${1:My new Chrome Extension using browser action}",
+  "manifest_version": 2,
+  "version": "1.0",
+  "description": "${2:A sample extension manifest. Change this to describe your extension.",
+  "permissions": [ ${3:"tabs"} ],
+  "browser_action": {
+      "default_title": "${4:This is the browser action title.}",
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+  }
+}
+]]></content>
+    <tabTrigger>chromeext-manifest-browseraction</tabTrigger>
+    <scope>source.json</scope>
+    <description>Chrome Extension manifest - Browser action sample</description>
+</snippet>

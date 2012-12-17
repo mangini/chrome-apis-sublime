@@ -1,0 +1,48 @@
+[
+    {
+        "caption": "Chrome",
+        "mnemonic": "A",
+        "id": "chrome",
+        "children":
+        [
+            { "caption": "New App...", "mnemonic": "A",
+                "children": [
+                  { "command": "new_chrome", "args":{"name": "sampleapp_helloworld"}, "caption": "Hello world"},
+                  { "command": "new_chrome", "args":{"name": "sampleapp_helloworld_sync_settings"}, "caption": "Hello world with synced settings"},
+                  { "caption": "-"},
+                  { "command": "new_chrome", "args":{"name": "sampleapp_serial"}, "caption": "Sample using Serial API"},
+                  { "command": "new_chrome", "args":{"name": "sampleapp_angularjs"}, "caption": "Sample using AngularJS"}
+                ]
+            },
+            { "caption": "New Extension...", "mnemonic": "E",
+                "children": [
+                  { "command": "new_chrome", "args":{"name": "sampleext_helloworld"}, "caption": "Hello world"},
+                  { "command": "new_chrome", "args":{"name": "sampleext_helloworld_browser_action"}, "caption": "Hello world - Browser action"},
+                  { "command": "new_chrome", "args":{"name": "sampleext_helloworld_page_action"}, "caption": "Hello world - Page action"},
+                  { "caption": "-"},
+                  { "command": "new_chrome", "args":{"name": "sampleext_contentSettings"}, "caption": "Sample using contentSettings"}
+                ]
+            },
+            { "caption": "-"},
+            { "command": "manifest-lint", "caption": "Validate manifest.json", "mnemonic": "M" },
+            { "command": "csp_validate_files", "caption": "Validate CSP", "mnemonic": "C" },
+            { "command": "assets-validate", "caption": "Validate Chrome Web Store assets", "mnemonic": "S" },
+            { "caption": "-"},
+            { "command": "chrome-run", "caption": "Run locally"},
+            { "command": "chrome-pack", "caption": "Create deployable CRX package"},
+            { "command": "chrome-deploy", "caption": "Go to Chrome Web Store", "mnemonic": "D" },
+            { "caption": "-"},
+            { "caption": "Docs and samples",
+                "children": [
+                  { "command": "open_url", "args": {"url": "https://github.com/GoogleChrome/chrome-app-samples"}, "caption": "Samples - Apps" },
+                  { "command": "open_url", "args": {"url": "http://developer.chrome.com/apps/about_apps.html"}, "caption": "Documentation - Apps" },
+                  { "command": "open_url", "args": {"url": "https://github.com/GoogleChrome/chrome-app-codelab#readme"}, "caption": "Codelab - Apps" },
+                  { "caption": "-"},
+                  { "command": "open_url", "args": {"url": "https://developer.chrome.com/extensions/samples.html"}, "caption": "Samples - Extensions" },
+                  { "command": "open_url", "args": {"url": "https://developer.chrome.com/extensions/"}, "caption": "Documentation - Extensions" }
+                ]
+            },
+            { "command": "about-chromeapis", "caption": "About"}
+        ]
+    }
+]

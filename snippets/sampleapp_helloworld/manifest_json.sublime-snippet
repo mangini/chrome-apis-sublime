@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[{
+  "manifest_version": 2,
+  "name": "${1:Hello World}",
+  "version": "1",
+  "permissions": [],
+  "app": {
+    "background": {
+      "scripts": ["${2:main.js}"]
+    }
+  },
+  "minimum_chrome_version": "${3:23}"
+
+}
+]]></content>
+    <description>Manifest for Sample App 1 - hello world</description>
+</snippet>

@@ -1,0 +1,24 @@
+<snippet>
+    <content><![CDATA[
+{
+  "manifest_version": 2,
+  "name": "${1:My new Chrome App}",
+  "version": "1",
+  "permissions": [ ${2:"experimental"} ],
+  "app": {
+    "background": {
+      "scripts": ["${3:main.js}"]
+    }
+  },
+  "minimum_chrome_version": "${4:24}",
+
+}
+
+      ]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>chromeapp-manifest</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>source.json</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>Chrome App manifest</description>
+</snippet>

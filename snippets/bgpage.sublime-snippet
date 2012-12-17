@@ -1,0 +1,21 @@
+<snippet>
+    <content><![CDATA[
+/**
+ * Listens for the app launching then creates the window
+ *
+ * @see http://developer.chrome.com/apps/app.window.html
+ */
+chrome.app.runtime.onLaunched.addListener(function() {
+  chrome.app.window.create('index.html', {
+    width: ${1:300},
+    height: ${2:300}
+  });
+});
+      ]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>chromeapp-bg-page</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>source.js</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>Chrome App sample background page</description>
+</snippet>
