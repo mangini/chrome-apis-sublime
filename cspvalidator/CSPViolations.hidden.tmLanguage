@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>name</key>
+	<string>CSP Violations</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>Filename</string>
+			<key>match</key>
+			<string>^[^:]*:\d+$</string>
+			<key>name</key>
+			<string>entity.name.class.cspviolations</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Filename</string>
+			<key>match</key>
+			<string>^\d+ CSP violations? found</string>
+			<key>name</key>
+			<string>invalid.cspviolations</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Filename</string>
+			<key>match</key>
+			<string>^Project .+</string>
+			<key>name</key>
+			<string>support.function.cspviolations</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Filename</string>
+			<key>match</key>
+			<string>^CSP rule:.*</string>
+			<key>name</key>
+			<string>entity.name.filename.find-in-files</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>text.cspviolations</string>
+	<key>uuid</key>
+	<string>4020c76f-fff4-4d61-b6eb-5631ebb86d5d</string>
+</dict>
+</plist>

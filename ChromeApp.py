@@ -121,3 +121,5 @@ class ChromeApp(sublime_plugin.EventListener):
 		  #completions = []
 #		  return [('isochronousTransfer\tChrome usb', 'chrome.experimental.usb.isochronousTransfer(callback)')]
 #		  return [('chrome.experimental.usb.isochronousTransfer', 'isochronousTransfer\tChrome usb', 'chrome.experimental.usb.isochronousTransfer(callback)')]
+
+

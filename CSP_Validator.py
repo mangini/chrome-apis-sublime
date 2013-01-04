@@ -4,6 +4,8 @@ import re
 import os
 import ChromeApp
 
+CSP_VIOLATIONS_SYNTAX = "cspvalidator/CSPViolations.hidden.tmLanguage"
+CSP_VIOLATIONS_NAME = "Violations of CSP rules"
 
 class CSPRule():
     """ Represents a validation rule """
@@ -21,10 +23,12 @@ class CSPError:
     """ Represents an error """
     filename = None
     message = ''
+    line = 0
 
-    def __init__(self, filename, message):
+    def __init__(self, filename, line, message):
         self.filename = filename
         self.message = message
+        self.line = line
 
 
 class CSPValidator():
@@ -97,96 +101,126 @@ class CSPValidator():
     def get_view_contents(self, view):
         return view.substr(sublime.Region(0, view.size()))
 
-    def validate_contents(self, contents):
+    def validate_contents(self, contents, filename):
         errors = []
 
         for rule in self.rules:
-            matches = rule.rule.search(contents)
-            if (matches): 
-                for match in matches:
-                    errors.append(
-                        CSPError(match, rule.message)
-                    )
+            for match in re.finditer( rule.rule, contents ) :
+                # TODO: this is suboptimal, consider refactoring
+                line = contents.count("\n", 0, match.start())+1
+                errors.append(
+                    CSPError(filename, line, rule.message)
+                )
 
         return errors
 
 
-class csp_validate_old(sublime_plugin.WindowCommand):
-
-    def xrun(self):
-        self.violations = [
-            {"file": "extensions.json", "line": 137, "message": "Cannot use inline scripts on HTML"},
-            {"file": "index.js", "line": 11, "message": "Cannot use eval()"}]
-        quick_panel = []
-        for v in self.violations:
-            quick_panel.append([
-                "%s line %d" % (v['file'], v['line']),
-                "CSP rule: %s" % v['message']])
-
-        self.window.show_quick_panel(quick_panel, self.csp_rule_clicked)
-
-    def csp_rule_clicked(self, index):
-        if index<0:
-            return
-        filename=self.violations[index]['file']
-        line=self.violations[index]['line']
-        self.window.open_file("%s:%d" % (filename, line), 
-            sublime.ENCODED_POSITION)
-
-
 class csp_validate_files(sublime_plugin.ApplicationCommand):
     """ Main Validator Class """
-    errors = []
     validator = CSPValidator()
 
     def is_valid_file_type(self, filename):
         """ Checks that the file is worth checking """
-        return filename != None and filename.endswith(".js")
+        if filename == None:
+            return False
+
+        fn = filename.lower()
+        return re.compile('(.html?|.js)$').search(fn)!=None
 
     def run_validator_all_files(self):
         projectRoot = ChromeApp.findProjectRoot(sublime.active_window().active_view().file_name())
-        self.run_validator_on_dir(projectRoot);
-        if len(self.errors) > 0:
-            self.show_errors()
+        if (projectRoot):
+            errors = self.run_validator_on_dir(projectRoot);
+            self.show_errors(projectRoot, errors)
+        else:
+            sublime.message_dialog("Could not detect a valid Chrome App manifest for this file:\n%s" % sublime.active_window().active_view().file_name())
 
     def run_validator_on_dir(self, dir):
+        errors = []
         for f in os.listdir(dir):
             filename = os.path.join(dir, f)
             if os.path.isdir(filename):
-                self.run_validator_on_dir(filename)
+                errors = errors + self.run_validator_on_dir(filename)
             else:
-                self.run_validator(filename)
+                errors = errors + self.run_validator(filename)
+        return errors
 
     def run_validator(self, filename):
         # early return for anything not using the correct syntax
         if not self.is_valid_file_type(filename):
-            return
+            return []
 
         contents = open(filename, "r").read()
         # Get the file and send to the validator
-        self.errors.append(self.validator.validate_contents(contents))
+        return self.validator.validate_contents(contents, filename)
 
-    def show_errors(self):
-#        self.violations = [
-#            {"file": "extensions.json", "line": 137, "message": "Cannot use inline scripts on HTML"},
-#            {"file": "index.js", "line": 11, "message": "Cannot use eval()"}]
-        quick_panel = []
-        for v in self.errors:
-            quick_panel.append([
-                "%s" % v.message,
-                "%s" % v.message])
-#                "%s line %d" % (v['file'], v['line']),
-#                "CSP rule: %s" % v['message']])
+    def show_errors(self, projectRoot, errors):
+        if len(errors) <= 0:
+            sublime.message_dialog("Hooray! Apparently there are no CSP violations in project:\n%s" % projectRoot)
+            return
 
-        self.window.show_quick_panel(quick_panel, self.csp_rule_clicked)
+        errorView = sublime.active_window().new_file()
+        errorView.settings().set("projectRoot", projectRoot)
+        errorView.set_scratch(True)
+        errorView.set_name(CSP_VIOLATIONS_NAME)
+        edit = errorView.begin_edit()
+
+        text = ( "Project %s\n\n%d CSP violation%s found\n" % 
+            (projectRoot, len(errors), "s" if len(errors)>1 else ""))
+
+        text += "(double click on filenames to jump into violations)\n\n"
+
+        for e in errors:
+            text+="%s:%s\n" % (e.filename[len(projectRoot)+1:], e.line)
+            text+="CSP rule: %s\n\n" % e.message
+
+        errorView.insert(edit, 0, text)
+
+        errorView.end_edit(edit)
+        errorView.set_syntax_file("%s/%s/%s" % 
+            (sublime.packages_path(), ChromeApp.PACKAGE_NAME, CSP_VIOLATIONS_SYNTAX))
 
     def csp_rule_clicked(self, index):
         if index<0:
             return
-        filename=self.errors[index].message
-#        line=self.violations[index]['line']
-#        self.window.open_file("%s:%d" % (filename, line), 
-#            sublime.ENCODED_POSITION)
+        filename=self.errors[index].filename
+        line=self.errors[index].line
+        sublime.active_window().open_file("%s:%d" % (filename, line), 
+            sublime.ENCODED_POSITION)
 
     def run(self):
         self.run_validator_all_files()
+
+
+class goto_file(sublime_plugin.TextCommand):
+
+    def is_applicable(self):
+        return (self.view.settings().get('syntax').find(CSP_VIOLATIONS_SYNTAX)>=0 
+            and self.view.name()==CSP_VIOLATIONS_NAME
+            and self.view.settings().has("projectRoot"))
+
+
+    def run_(self, args):
+        if self.is_applicable() and len(self.view.sel())==1:
+            i = self.view.line(self.view.sel()[0])
+            line = self.view.substr(i)
+            m = re.compile(r"([^:]+):(\d+)").match(line)
+            if m!=None:
+                projectRoot = self.view.settings().get("projectRoot")
+                filename = m.group(1)
+                fileline = int(m.group(2))
+                sublime.active_window().open_file("%s:%d" % 
+                    (os.path.join(projectRoot, filename), 
+                        fileline), sublime.ENCODED_POSITION)
+            else:
+                self.run_original_command(args)
+
+        else:
+            self.run_original_command(args)
+
+    def run_original_command(self, args):
+        myargs = args["bypass_if_not_applicable"]
+        original_command = myargs["press_command"]
+        if original_command:
+          original_args = dict({"event": args["event"]}.items() + myargs["press_args"].items())
+          self.view.run_command(original_command, original_args)
