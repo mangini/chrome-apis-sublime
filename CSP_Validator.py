@@ -133,7 +133,9 @@ class csp_validate_files(sublime_plugin.ApplicationCommand):
             errors = self.run_validator_on_dir(projectRoot);
             self.show_errors(projectRoot, errors)
         else:
-            sublime.message_dialog("Could not detect a valid Chrome App manifest for this file:\n%s" % sublime.active_window().active_view().file_name())
+            sublime.message_dialog(
+                "Could not detect a valid Chrome App manifest for this file:\n%s\n\n"
+                "You need a file manifest.json in the same dir or in any parent dir of this file." % sublime.active_window().active_view().file_name())
 
     def run_validator_on_dir(self, dir):
         errors = []
