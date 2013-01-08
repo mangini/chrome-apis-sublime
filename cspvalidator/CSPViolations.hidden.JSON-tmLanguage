@@ -1,0 +1,23 @@
+{ "name": "CSP Violations",
+  "scopeName": "text.cspviolations",
+  "fileTypes": ["testing"],
+  "patterns": [
+   { "match": "^[^:]*:\\d+$",
+      "name": "entity.name.class.cspviolations",
+      "comment": "Filename"
+    },
+   { "match": "^\\d+ CSP violations? found",
+      "name": "invalid.cspviolations",
+      "comment": "Filename"
+    },
+   { "match": "^Project .+",
+      "name": "support.function.cspviolations",
+      "comment": "Filename"
+    },
+   { "match": "^CSP rule:.*",
+      "name": "entity.name.filename.find-in-files",
+      "comment": "Filename"
+    }
+  ],
+  "uuid": "4020c76f-fff4-4d61-b6eb-5631ebb86d5d"
+}
