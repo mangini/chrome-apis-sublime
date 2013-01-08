@@ -2,7 +2,7 @@ import sublime, sublime_plugin
 import json, os, re, cPickle
 
 API_SIMPLIFIER=re.compile('chrome\.(?:experimental\.)?(.*)')
-PACKAGE_NAME = "ChromeApis"
+PACKAGE_NAME = "Chrome Apps and Extensions"
 
 MANIFEST_LOOKSLIKE_NOTHING=0
 MANIFEST_LOOKSLIKE_APP=1
