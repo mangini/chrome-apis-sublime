@@ -1,878 +1,1210 @@
 (lp1
-(Vchrome.browsingData.removePluginData
-VremovePluginData	Chrome browsingData
-Vchrome.browsingData.removePluginData(options, callback)
-tp2
-a(Vchrome.browsingData.removeFormData
-VremoveFormData	Chrome browsingData
-Vchrome.browsingData.removeFormData(options, callback)
-tp3
-a(Vchrome.browsingData.removeFileSystems
-VremoveFileSystems	Chrome browsingData
-Vchrome.browsingData.removeFileSystems(options, callback)
-tp4
-a(Vchrome.browsingData.remove
+(Vchrome.browsingData.remove
 Vremove	Chrome browsingData
-Vchrome.browsingData.remove(options, dataToRemove, callback)
-tp5
-a(Vchrome.browsingData.removeHistory
-VremoveHistory	Chrome browsingData
-Vchrome.browsingData.removeHistory(options, callback)
-tp6
-a(Vchrome.browsingData.removeCookies
-VremoveCookies	Chrome browsingData
-Vchrome.browsingData.removeCookies(options, callback)
-tp7
-a(Vchrome.browsingData.removeWebSQL
-VremoveWebSQL	Chrome browsingData
-Vchrome.browsingData.removeWebSQL(options, callback)
-tp8
-a(Vchrome.browsingData.removeLocalStorage
-VremoveLocalStorage	Chrome browsingData
-Vchrome.browsingData.removeLocalStorage(options, callback)
-tp9
+Vchrome.browsingData.remove(options, dataToRemove)
+tp2
 a(Vchrome.browsingData.removeAppcache
 VremoveAppcache	Chrome browsingData
-Vchrome.browsingData.removeAppcache(options, callback)
-tp10
-a(Vchrome.browsingData.removeDownloads
-VremoveDownloads	Chrome browsingData
-Vchrome.browsingData.removeDownloads(options, callback)
-tp11
-a(Vchrome.browsingData.removePasswords
-VremovePasswords	Chrome browsingData
-Vchrome.browsingData.removePasswords(options, callback)
-tp12
+Vchrome.browsingData.removeAppcache(options)
+tp3
 a(Vchrome.browsingData.removeCache
 VremoveCache	Chrome browsingData
-Vchrome.browsingData.removeCache(options, callback)
-tp13
+Vchrome.browsingData.removeCache(options)
+tp4
+a(Vchrome.browsingData.removeCookies
+VremoveCookies	Chrome browsingData
+Vchrome.browsingData.removeCookies(options)
+tp5
+a(Vchrome.browsingData.removeDownloads
+VremoveDownloads	Chrome browsingData
+Vchrome.browsingData.removeDownloads(options)
+tp6
+a(Vchrome.browsingData.removeFileSystems
+VremoveFileSystems	Chrome browsingData
+Vchrome.browsingData.removeFileSystems(options)
+tp7
+a(Vchrome.browsingData.removeFormData
+VremoveFormData	Chrome browsingData
+Vchrome.browsingData.removeFormData(options)
+tp8
+a(Vchrome.browsingData.removeHistory
+VremoveHistory	Chrome browsingData
+Vchrome.browsingData.removeHistory(options)
+tp9
 a(Vchrome.browsingData.removeIndexedDB
 VremoveIndexedDB	Chrome browsingData
-Vchrome.browsingData.removeIndexedDB(options, callback)
+Vchrome.browsingData.removeIndexedDB(options)
+tp10
+a(Vchrome.browsingData.removeLocalStorage
+VremoveLocalStorage	Chrome browsingData
+Vchrome.browsingData.removeLocalStorage(options)
+tp11
+a(Vchrome.browsingData.removePluginData
+VremovePluginData	Chrome browsingData
+Vchrome.browsingData.removePluginData(options)
+tp12
+a(Vchrome.browsingData.removePasswords
+VremovePasswords	Chrome browsingData
+Vchrome.browsingData.removePasswords(options)
+tp13
+a(Vchrome.browsingData.removeWebSQL
+VremoveWebSQL	Chrome browsingData
+Vchrome.browsingData.removeWebSQL(options)
 tp14
-a(Vchrome.contextMenus.removeAll
-VremoveAll	Chrome contextMenus
-Vchrome.contextMenus.removeAll(callback)
-tp15
 a(Vchrome.contextMenus.create
 Vcreate	Chrome contextMenus
-Vchrome.contextMenus.create(createProperties, callback)
-tp16
+Vchrome.contextMenus.create(createProperties)
+tp15
 a(Vchrome.contextMenus.update
 Vupdate	Chrome contextMenus
-Vchrome.contextMenus.update(id, updateProperties, callback)
-tp17
+Vchrome.contextMenus.update(id, updateProperties)
+tp16
 a(Vchrome.contextMenus.remove
 Vremove	Chrome contextMenus
-Vchrome.contextMenus.remove(menuItemId, callback)
+Vchrome.contextMenus.remove(menuItemId)
+tp17
+a(Vchrome.contextMenus.removeAll
+VremoveAll	Chrome contextMenus
+Vchrome.contextMenus.removeAll()
 tp18
+a(Vchrome.contextMenus.onClicked.addListener
+VonClicked	Chrome contextMenus
+Vchrome.contextMenus.onClicked.addListener(function( info, tab ) {\u000a\u000a});
+tp19
 a(Vchrome.fileBrowserHandler.selectFile
 VselectFile	Chrome fileBrowserHandler
-Vchrome.fileBrowserHandler.selectFile(selectionParams, callback)
-tp19
+Vchrome.fileBrowserHandler.selectFile(selectionParams)
+tp20
+a(Vchrome.fileBrowserHandler.onExecute.addListener
+VonExecute	Chrome fileBrowserHandler
+Vchrome.fileBrowserHandler.onExecute.addListener(function( id, details ) {\u000a\u000a});
+tp21
+a(Vchrome.fileBrowserHandler.onExecuteContentHandler.addListener
+VonExecuteContentHandler	Chrome fileBrowserHandler
+Vchrome.fileBrowserHandler.onExecuteContentHandler.addListener(function( mime_type, content_url ) {\u000a\u000a});
+tp22
 a(Vchrome.experimental.systemInfo.cpu.get
 Vget	Chrome systemInfo.cpu
-Vchrome.experimental.systemInfo.cpu.get(CpuInfoCallback)
-tp20
+Vchrome.experimental.systemInfo.cpu.get()
+tp23
+a(Vchrome.experimental.systemInfo.cpu.onUpdated.addListener
+VonUpdated	Chrome systemInfo.cpu
+Vchrome.experimental.systemInfo.cpu.onUpdated.addListener(function( info ) {\u000a\u000a});
+tp24
 a(Vchrome.devtools.network.getHAR
 VgetHAR	Chrome devtools.network
-Vchrome.devtools.network.getHAR(callback)
-tp21
+Vchrome.devtools.network.getHAR()
+tp25
+a(Vchrome.devtools.network.onRequestFinished.addListener
+VonRequestFinished	Chrome devtools.network
+Vchrome.devtools.network.onRequestFinished.addListener(function( request ) {\u000a\u000a});
+tp26
+a(Vchrome.devtools.network.onNavigated.addListener
+VonNavigated	Chrome devtools.network
+Vchrome.devtools.network.onNavigated.addListener(function( url ) {\u000a\u000a});
+tp27
 a(Vchrome.experimental.systemInfo.storage.get
 Vget	Chrome systemInfo.storage
-Vchrome.experimental.systemInfo.storage.get(StorageInfoCallback)
-tp22
+Vchrome.experimental.systemInfo.storage.get()
+tp28
+a(Vchrome.experimental.systemInfo.storage.onAvailableCapacityChanged.addListener
+VonAvailableCapacityChanged	Chrome systemInfo.storage
+Vchrome.experimental.systemInfo.storage.onAvailableCapacityChanged.addListener(function( info ) {\u000a\u000a});
+tp29
 a(Vchrome.commands.getAll
 VgetAll	Chrome commands
-Vchrome.commands.getAll(callback)
-tp23
-a(Vchrome.management.setEnabled
-VsetEnabled	Chrome management
-Vchrome.management.setEnabled(id, enabled, callback)
-tp24
-a(Vchrome.management.getPermissionWarningsById
-VgetPermissionWarningsById	Chrome management
-Vchrome.management.getPermissionWarningsById(id, callback)
-tp25
-a(Vchrome.management.get
-Vget	Chrome management
-Vchrome.management.get(id, callback)
-tp26
+Vchrome.commands.getAll()
+tp30
+a(Vchrome.commands.onCommand.addListener
+VonCommand	Chrome commands
+Vchrome.commands.onCommand.addListener(function( command ) {\u000a\u000a});
+tp31
 a(Vchrome.management.getAll
 VgetAll	Chrome management
-Vchrome.management.getAll(callback)
-tp27
+Vchrome.management.getAll()
+tp32
+a(Vchrome.management.get
+Vget	Chrome management
+Vchrome.management.get(id)
+tp33
+a(Vchrome.management.getPermissionWarningsById
+VgetPermissionWarningsById	Chrome management
+Vchrome.management.getPermissionWarningsById(id)
+tp34
 a(Vchrome.management.getPermissionWarningsByManifest
 VgetPermissionWarningsByManifest	Chrome management
-Vchrome.management.getPermissionWarningsByManifest(manifestStr, callback)
-tp28
-a(Vchrome.management.launchApp
-VlaunchApp	Chrome management
-Vchrome.management.launchApp(id, callback)
-tp29
+Vchrome.management.getPermissionWarningsByManifest(manifestStr)
+tp35
+a(Vchrome.management.setEnabled
+VsetEnabled	Chrome management
+Vchrome.management.setEnabled(id, enabled)
+tp36
 a(Vchrome.management.uninstall
 Vuninstall	Chrome management
-Vchrome.management.uninstall(id, options, callback)
-tp30
+Vchrome.management.uninstall(id, options)
+tp37
+a(Vchrome.management.launchApp
+VlaunchApp	Chrome management
+Vchrome.management.launchApp(id)
+tp38
+a(Vchrome.management.onInstalled.addListener
+VonInstalled	Chrome management
+Vchrome.management.onInstalled.addListener(function( info ) {\u000a\u000a});
+tp39
+a(Vchrome.management.onUninstalled.addListener
+VonUninstalled	Chrome management
+Vchrome.management.onUninstalled.addListener(function( id ) {\u000a\u000a});
+tp40
+a(Vchrome.management.onEnabled.addListener
+VonEnabled	Chrome management
+Vchrome.management.onEnabled.addListener(function( info ) {\u000a\u000a});
+tp41
+a(Vchrome.management.onDisabled.addListener
+VonDisabled	Chrome management
+Vchrome.management.onDisabled.addListener(function( info ) {\u000a\u000a});
+tp42
 a(Vchrome.alarms.create
 Vcreate	Chrome alarms
 Vchrome.alarms.create(name, alarmInfo)
-tp31
+tp43
+a(Vchrome.alarms.get
+Vget	Chrome alarms
+Vchrome.alarms.get(name)
+tp44
 a(Vchrome.alarms.getAll
 VgetAll	Chrome alarms
-Vchrome.alarms.getAll(AlarmListCallback)
-tp32
-a(Vchrome.alarms.clearAll
-VclearAll	Chrome alarms
-Vchrome.alarms.clearAll()
-tp33
+Vchrome.alarms.getAll()
+tp45
 a(Vchrome.alarms.clear
 Vclear	Chrome alarms
 Vchrome.alarms.clear(name)
-tp34
-a(Vchrome.alarms.get
-Vget	Chrome alarms
-Vchrome.alarms.get(name, AlarmCallback)
-tp35
-a(Vchrome.experimental.devtools.console.getMessages
-VgetMessages	Chrome devtools.console
-Vchrome.experimental.devtools.console.getMessages(callback)
-tp36
+tp46
+a(Vchrome.alarms.clearAll
+VclearAll	Chrome alarms
+Vchrome.alarms.clearAll()
+tp47
+a(Vchrome.alarms.onAlarm.addListener
+VonAlarm	Chrome alarms
+Vchrome.alarms.onAlarm.addListener(function( alarm ) {\u000a\u000a});
+tp48
 a(Vchrome.experimental.devtools.console.addMessage
 VaddMessage	Chrome devtools.console
 Vchrome.experimental.devtools.console.addMessage(severity, text)
-tp37
+tp49
+a(Vchrome.experimental.devtools.console.getMessages
+VgetMessages	Chrome devtools.console
+Vchrome.experimental.devtools.console.getMessages()
+tp50
+a(Vchrome.experimental.devtools.console.onMessageAdded.addListener
+VonMessageAdded	Chrome devtools.console
+Vchrome.experimental.devtools.console.onMessageAdded.addListener(function( message ) {\u000a\u000a});
+tp51
 a(Vchrome.webstore.install
 Vinstall	Chrome webstore
-Vchrome.webstore.install(url, successCallback, failureCallback)
-tp38
-a(Vchrome.experimental.record.replayURLs
-VreplayURLs	Chrome record
-Vchrome.experimental.record.replayURLs(captureName, repeatCount, details, callback)
-tp39
+Vchrome.webstore.install(url, successCallback)
+tp52
 a(Vchrome.experimental.record.captureURLs
 VcaptureURLs	Chrome record
-Vchrome.experimental.record.captureURLs(captureName, urls, callback)
-tp40
+Vchrome.experimental.record.captureURLs(captureName, urls)
+tp53
+a(Vchrome.experimental.record.replayURLs
+VreplayURLs	Chrome record
+Vchrome.experimental.record.replayURLs(captureName, repeatCount, details)
+tp54
 a(Vchrome.experimental.identity.getAuthToken
 VgetAuthToken	Chrome identity
-Vchrome.experimental.identity.getAuthToken(details, GetAuthTokenCallback)
-tp41
+Vchrome.experimental.identity.getAuthToken(details)
+tp55
 a(Vchrome.experimental.identity.launchWebAuthFlow
 VlaunchWebAuthFlow	Chrome identity
-Vchrome.experimental.identity.launchWebAuthFlow(details, LaunchWebAuthFlowCallback)
-tp42
+Vchrome.experimental.identity.launchWebAuthFlow(details)
+tp56
+a(Vchrome.declarativeWebRequest.onRequest.addListener
+VonRequest	Chrome declarativeWebRequest
+Vchrome.declarativeWebRequest.onRequest.addListener(function(  ) {\u000a\u000a});
+tp57
+a(Vchrome.declarativeWebRequest.onMessage.addListener
+VonMessage	Chrome declarativeWebRequest
+Vchrome.declarativeWebRequest.onMessage.addListener(function( details ) {\u000a\u000a});
+tp58
+a(Vchrome.i18n.getAcceptLanguages
+VgetAcceptLanguages	Chrome i18n
+Vchrome.i18n.getAcceptLanguages()
+tp59
 a(Vchrome.i18n.getMessage
 VgetMessage	Chrome i18n
 Vchrome.i18n.getMessage(messageName, substitutions)
-tp43
-a(Vchrome.i18n.getAcceptLanguages
-VgetAcceptLanguages	Chrome i18n
-Vchrome.i18n.getAcceptLanguages(callback)
-tp44
-a(Vchrome.experimental.bluetooth.isPowered
-VisPowered	Chrome bluetooth
-Vchrome.experimental.bluetooth.isPowered(BooleanCallback)
-tp45
-a(Vchrome.experimental.bluetooth.disconnect
-Vdisconnect	Chrome bluetooth
-Vchrome.experimental.bluetooth.disconnect(options, ResultCallback)
-tp46
-a(Vchrome.experimental.bluetooth.read
-Vread	Chrome bluetooth
-Vchrome.experimental.bluetooth.read(options, DataCallback)
-tp47
-a(Vchrome.experimental.bluetooth.setOutOfBandPairingData
-VsetOutOfBandPairingData	Chrome bluetooth
-Vchrome.experimental.bluetooth.setOutOfBandPairingData(options, ResultCallback)
-tp48
-a(Vchrome.experimental.bluetooth.getName
-VgetName	Chrome bluetooth
-Vchrome.experimental.bluetooth.getName(NameCallback)
-tp49
-a(Vchrome.experimental.bluetooth.getAddress
-VgetAddress	Chrome bluetooth
-Vchrome.experimental.bluetooth.getAddress(AddressCallback)
-tp50
-a(Vchrome.experimental.bluetooth.getDevices
-VgetDevices	Chrome bluetooth
-Vchrome.experimental.bluetooth.getDevices(options, ResultCallback)
-tp51
-a(Vchrome.experimental.bluetooth.write
-Vwrite	Chrome bluetooth
-Vchrome.experimental.bluetooth.write(options, SizeCallback)
-tp52
-a(Vchrome.experimental.bluetooth.getLocalOutOfBandPairingData
-VgetLocalOutOfBandPairingData	Chrome bluetooth
-Vchrome.experimental.bluetooth.getLocalOutOfBandPairingData(OutOfBandPairingDataCallback)
-tp53
-a(Vchrome.experimental.bluetooth.connect
-Vconnect	Chrome bluetooth
-Vchrome.experimental.bluetooth.connect(options, SocketCallback)
-tp54
-a(Vchrome.experimental.bluetooth.getServices
-VgetServices	Chrome bluetooth
-Vchrome.experimental.bluetooth.getServices(options, ServicesCallback)
-tp55
-a(Vchrome.experimental.bluetooth.isAvailable
-VisAvailable	Chrome bluetooth
-Vchrome.experimental.bluetooth.isAvailable(BooleanCallback)
-tp56
-a(Vchrome.experimental.bluetooth.startDiscovery
-VstartDiscovery	Chrome bluetooth
-Vchrome.experimental.bluetooth.startDiscovery(options, ResultCallback)
-tp57
-a(Vchrome.experimental.bluetooth.stopDiscovery
-VstopDiscovery	Chrome bluetooth
-Vchrome.experimental.bluetooth.stopDiscovery(ResultCallback)
-tp58
-a(Vchrome.experimental.pushMessaging.getChannelId
-VgetChannelId	Chrome pushMessaging
-Vchrome.experimental.pushMessaging.getChannelId(ChannelIdCallback)
-tp59
-a(Vchrome.extension.getBackgroundPage
-VgetBackgroundPage	Chrome extension
-Vchrome.extension.getBackgroundPage()
 tp60
+a(Vchrome.idle.queryState
+VqueryState	Chrome idle
+Vchrome.idle.queryState(detectionIntervalInSeconds)
+tp61
+a(Vchrome.idle.setDetectionInterval
+VsetDetectionInterval	Chrome idle
+Vchrome.idle.setDetectionInterval(intervalInSeconds)
+tp62
+a(Vchrome.idle.onStateChanged.addListener
+VonStateChanged	Chrome idle
+Vchrome.idle.onStateChanged.addListener(function( newState ) {\u000a\u000a});
+tp63
 a(Vchrome.extension.getURL
 VgetURL	Chrome extension
 Vchrome.extension.getURL(path)
-tp61
-a(Vchrome.extension.setUpdateUrlData
-VsetUpdateUrlData	Chrome extension
-Vchrome.extension.setUpdateUrlData(data)
-tp62
+tp64
 a(Vchrome.extension.getViews
 VgetViews	Chrome extension
 Vchrome.extension.getViews(fetchProperties)
-tp63
-a(Vchrome.extension.isAllowedFileSchemeAccess
-VisAllowedFileSchemeAccess	Chrome extension
-Vchrome.extension.isAllowedFileSchemeAccess(callback)
-tp64
-a(Vchrome.extension.sendMessage
-VsendMessage	Chrome extension
-Vchrome.extension.sendMessage(extensionId, message, responseCallback)
 tp65
-a(Vchrome.extension.connect
-Vconnect	Chrome extension
-Vchrome.extension.connect(extensionId, connectInfo)
+a(Vchrome.extension.getBackgroundPage
+VgetBackgroundPage	Chrome extension
+Vchrome.extension.getBackgroundPage()
 tp66
 a(Vchrome.extension.isAllowedIncognitoAccess
 VisAllowedIncognitoAccess	Chrome extension
-Vchrome.extension.isAllowedIncognitoAccess(callback)
+Vchrome.extension.isAllowedIncognitoAccess()
 tp67
+a(Vchrome.extension.isAllowedFileSchemeAccess
+VisAllowedFileSchemeAccess	Chrome extension
+Vchrome.extension.isAllowedFileSchemeAccess()
+tp68
+a(Vchrome.extension.setUpdateUrlData
+VsetUpdateUrlData	Chrome extension
+Vchrome.extension.setUpdateUrlData(data)
+tp69
 a(Vchrome.experimental.speechInput.start
 Vstart	Chrome speechInput
-Vchrome.experimental.speechInput.start(options, callback)
-tp68
-a(Vchrome.experimental.speechInput.isRecording
-VisRecording	Chrome speechInput
-Vchrome.experimental.speechInput.isRecording(callback)
-tp69
+Vchrome.experimental.speechInput.start(options)
+tp70
 a(Vchrome.experimental.speechInput.stop
 Vstop	Chrome speechInput
-Vchrome.experimental.speechInput.stop(callback)
-tp70
+Vchrome.experimental.speechInput.stop()
+tp71
+a(Vchrome.experimental.speechInput.isRecording
+VisRecording	Chrome speechInput
+Vchrome.experimental.speechInput.isRecording()
+tp72
+a(Vchrome.experimental.speechInput.onError.addListener
+VonError	Chrome speechInput
+Vchrome.experimental.speechInput.onError.addListener(function( error ) {\u000a\u000a});
+tp73
+a(Vchrome.experimental.speechInput.onSoundStart.addListener
+VonSoundStart	Chrome speechInput
+Vchrome.experimental.speechInput.onSoundStart.addListener(function(  ) {\u000a\u000a});
+tp74
+a(Vchrome.experimental.speechInput.onSoundEnd.addListener
+VonSoundEnd	Chrome speechInput
+Vchrome.experimental.speechInput.onSoundEnd.addListener(function(  ) {\u000a\u000a});
+tp75
+a(Vchrome.experimental.speechInput.onResult.addListener
+VonResult	Chrome speechInput
+Vchrome.experimental.speechInput.onResult.addListener(function( event ) {\u000a\u000a});
+tp76
 a(Vchrome.runtime.getBackgroundPage
 VgetBackgroundPage	Chrome runtime
-Vchrome.runtime.getBackgroundPage(callback)
-tp71
+Vchrome.runtime.getBackgroundPage()
+tp77
 a(Vchrome.runtime.getManifest
 VgetManifest	Chrome runtime
 Vchrome.runtime.getManifest()
-tp72
+tp78
 a(Vchrome.runtime.getURL
 VgetURL	Chrome runtime
 Vchrome.runtime.getURL(path)
-tp73
-a(Vchrome.experimental.processes.getProcessIdForTab
-VgetProcessIdForTab	Chrome processes
-Vchrome.experimental.processes.getProcessIdForTab(tabId, callback)
-tp74
+tp79
+a(Vchrome.runtime.reload
+Vreload	Chrome runtime
+Vchrome.runtime.reload()
+tp80
+a(Vchrome.runtime.requestUpdateCheck
+VrequestUpdateCheck	Chrome runtime
+Vchrome.runtime.requestUpdateCheck()
+tp81
+a(Vchrome.runtime.connect
+Vconnect	Chrome runtime
+Vchrome.runtime.connect(extensionId, connectInfo)
+tp82
+a(Vchrome.runtime.sendMessage
+VsendMessage	Chrome runtime
+Vchrome.runtime.sendMessage(extensionId, message)
+tp83
+a(Vchrome.runtime.onStartup.addListener
+VonStartup	Chrome runtime
+Vchrome.runtime.onStartup.addListener(function(  ) {\u000a\u000a});
+tp84
+a(Vchrome.runtime.onInstalled.addListener
+VonInstalled	Chrome runtime
+Vchrome.runtime.onInstalled.addListener(function( details ) {\u000a\u000a});
+tp85
+a(Vchrome.runtime.onSuspend.addListener
+VonSuspend	Chrome runtime
+Vchrome.runtime.onSuspend.addListener(function(  ) {\u000a\u000a});
+tp86
+a(Vchrome.runtime.onSuspendCanceled.addListener
+VonSuspendCanceled	Chrome runtime
+Vchrome.runtime.onSuspendCanceled.addListener(function(  ) {\u000a\u000a});
+tp87
+a(Vchrome.runtime.onUpdateAvailable.addListener
+VonUpdateAvailable	Chrome runtime
+Vchrome.runtime.onUpdateAvailable.addListener(function( details ) {\u000a\u000a});
+tp88
+a(Vchrome.runtime.onConnect.addListener
+VonConnect	Chrome runtime
+Vchrome.runtime.onConnect.addListener(function( port ) {\u000a\u000a});
+tp89
+a(Vchrome.runtime.onConnectExternal.addListener
+VonConnectExternal	Chrome runtime
+Vchrome.runtime.onConnectExternal.addListener(function( port ) {\u000a\u000a});
+tp90
+a(Vchrome.runtime.onMessage.addListener
+VonMessage	Chrome runtime
+Vchrome.runtime.onMessage.addListener(function( message, sender ) {\u000a\u000a});
+tp91
+a(Vchrome.runtime.onMessageExternal.addListener
+VonMessageExternal	Chrome runtime
+Vchrome.runtime.onMessageExternal.addListener(function( message, sender ) {\u000a\u000a});
+tp92
 a(Vchrome.experimental.processes.terminate
 Vterminate	Chrome processes
-Vchrome.experimental.processes.terminate(processId, callback)
-tp75
+Vchrome.experimental.processes.terminate(processId)
+tp93
+a(Vchrome.experimental.processes.getProcessIdForTab
+VgetProcessIdForTab	Chrome processes
+Vchrome.experimental.processes.getProcessIdForTab(tabId)
+tp94
 a(Vchrome.experimental.processes.getProcessInfo
 VgetProcessInfo	Chrome processes
-Vchrome.experimental.processes.getProcessInfo(processIds, includeMemory, callback)
-tp76
-a(Vchrome.tabs.executeScript
-VexecuteScript	Chrome tabs
-Vchrome.tabs.executeScript(tabId, details, callback)
-tp77
+Vchrome.experimental.processes.getProcessInfo(processIds, includeMemory)
+tp95
+a(Vchrome.experimental.processes.onUpdated.addListener
+VonUpdated	Chrome processes
+Vchrome.experimental.processes.onUpdated.addListener(function( processes ) {\u000a\u000a});
+tp96
+a(Vchrome.experimental.processes.onUpdatedWithMemory.addListener
+VonUpdatedWithMemory	Chrome processes
+Vchrome.experimental.processes.onUpdatedWithMemory.addListener(function( processes ) {\u000a\u000a});
+tp97
+a(Vchrome.experimental.processes.onCreated.addListener
+VonCreated	Chrome processes
+Vchrome.experimental.processes.onCreated.addListener(function( process ) {\u000a\u000a});
+tp98
+a(Vchrome.experimental.processes.onUnresponsive.addListener
+VonUnresponsive	Chrome processes
+Vchrome.experimental.processes.onUnresponsive.addListener(function( process ) {\u000a\u000a});
+tp99
+a(Vchrome.experimental.processes.onExited.addListener
+VonExited	Chrome processes
+Vchrome.experimental.processes.onExited.addListener(function( processId, exitType, exitCode ) {\u000a\u000a});
+tp100
 a(Vchrome.tabs.get
 Vget	Chrome tabs
-Vchrome.tabs.get(tabId, callback)
-tp78
+Vchrome.tabs.get(tabId)
+tp101
 a(Vchrome.tabs.getCurrent
 VgetCurrent	Chrome tabs
-Vchrome.tabs.getCurrent(callback)
-tp79
-a(Vchrome.tabs.create
-Vcreate	Chrome tabs
-Vchrome.tabs.create(createProperties, callback)
-tp80
-a(Vchrome.tabs.move
-Vmove	Chrome tabs
-Vchrome.tabs.move(tabIds, moveProperties, callback)
-tp81
-a(Vchrome.tabs.update
-Vupdate	Chrome tabs
-Vchrome.tabs.update(tabId, updateProperties, callback)
-tp82
-a(Vchrome.tabs.remove
-Vremove	Chrome tabs
-Vchrome.tabs.remove(tabIds, callback)
-tp83
-a(Vchrome.tabs.captureVisibleTab
-VcaptureVisibleTab	Chrome tabs
-Vchrome.tabs.captureVisibleTab(windowId, options, callback)
-tp84
-a(Vchrome.tabs.reload
-Vreload	Chrome tabs
-Vchrome.tabs.reload(tabId, reloadProperties, callback)
-tp85
-a(Vchrome.tabs.duplicate
-Vduplicate	Chrome tabs
-Vchrome.tabs.duplicate(tabId, callback)
-tp86
-a(Vchrome.tabs.sendMessage
-VsendMessage	Chrome tabs
-Vchrome.tabs.sendMessage(tabId, message, responseCallback)
-tp87
+Vchrome.tabs.getCurrent()
+tp102
 a(Vchrome.tabs.connect
 Vconnect	Chrome tabs
 Vchrome.tabs.connect(tabId, connectInfo)
-tp88
-a(Vchrome.tabs.insertCSS
-VinsertCSS	Chrome tabs
-Vchrome.tabs.insertCSS(tabId, details, callback)
-tp89
-a(Vchrome.tabs.highlight
-Vhighlight	Chrome tabs
-Vchrome.tabs.highlight(highlightInfo, callback)
-tp90
+tp103
+a(Vchrome.tabs.sendMessage
+VsendMessage	Chrome tabs
+Vchrome.tabs.sendMessage(tabId, message)
+tp104
+a(Vchrome.tabs.create
+Vcreate	Chrome tabs
+Vchrome.tabs.create(createProperties)
+tp105
+a(Vchrome.tabs.duplicate
+Vduplicate	Chrome tabs
+Vchrome.tabs.duplicate(tabId)
+tp106
 a(Vchrome.tabs.query
 Vquery	Chrome tabs
-Vchrome.tabs.query(queryInfo, callback)
-tp91
-a(Vchrome.tabs.getAllInWindow
-VgetAllInWindow	Chrome tabs
-Vchrome.tabs.getAllInWindow(windowId, callback)
-tp92
+Vchrome.tabs.query(queryInfo)
+tp107
+a(Vchrome.tabs.highlight
+Vhighlight	Chrome tabs
+Vchrome.tabs.highlight(highlightInfo)
+tp108
+a(Vchrome.tabs.update
+Vupdate	Chrome tabs
+Vchrome.tabs.update(tabId, updateProperties)
+tp109
+a(Vchrome.tabs.move
+Vmove	Chrome tabs
+Vchrome.tabs.move(tabIds, moveProperties)
+tp110
+a(Vchrome.tabs.reload
+Vreload	Chrome tabs
+Vchrome.tabs.reload(tabId, reloadProperties)
+tp111
+a(Vchrome.tabs.remove
+Vremove	Chrome tabs
+Vchrome.tabs.remove(tabIds)
+tp112
 a(Vchrome.tabs.detectLanguage
 VdetectLanguage	Chrome tabs
-Vchrome.tabs.detectLanguage(tabId, callback)
-tp93
-a(Vchrome.experimental.offscreenTabs.get
-Vget	Chrome offscreenTabs
-Vchrome.experimental.offscreenTabs.get(offscreenTabId, callback)
-tp94
-a(Vchrome.experimental.offscreenTabs.create
-Vcreate	Chrome offscreenTabs
-Vchrome.experimental.offscreenTabs.create(createProperties, callback)
-tp95
-a(Vchrome.experimental.offscreenTabs.getAll
-VgetAll	Chrome offscreenTabs
-Vchrome.experimental.offscreenTabs.getAll(callback)
-tp96
-a(Vchrome.experimental.offscreenTabs.update
-Vupdate	Chrome offscreenTabs
-Vchrome.experimental.offscreenTabs.update(offscreenTabId, updateProperties, callback)
-tp97
-a(Vchrome.experimental.offscreenTabs.remove
-Vremove	Chrome offscreenTabs
-Vchrome.experimental.offscreenTabs.remove(offscreenTabId, callback)
-tp98
-a(Vchrome.experimental.offscreenTabs.sendKeyboardEvent
-VsendKeyboardEvent	Chrome offscreenTabs
-Vchrome.experimental.offscreenTabs.sendKeyboardEvent(offscreenTabId, keyboardEvent, callback)
-tp99
-a(Vchrome.experimental.offscreenTabs.toDataUrl
-VtoDataUrl	Chrome offscreenTabs
-Vchrome.experimental.offscreenTabs.toDataUrl(offscreenTabId, options, callback)
-tp100
-a(Vchrome.experimental.offscreenTabs.sendMouseEvent
-VsendMouseEvent	Chrome offscreenTabs
-Vchrome.experimental.offscreenTabs.sendMouseEvent(offscreenTabId, mouseEvent, position, callback)
-tp101
-a(Vchrome.bookmarks.search
-Vsearch	Chrome bookmarks
-Vchrome.bookmarks.search(query, callback)
-tp102
-a(Vchrome.bookmarks.getTree
-VgetTree	Chrome bookmarks
-Vchrome.bookmarks.getTree(callback)
-tp103
-a(Vchrome.bookmarks.getRecent
-VgetRecent	Chrome bookmarks
-Vchrome.bookmarks.getRecent(numberOfItems, callback)
-tp104
+Vchrome.tabs.detectLanguage(tabId)
+tp113
+a(Vchrome.tabs.captureVisibleTab
+VcaptureVisibleTab	Chrome tabs
+Vchrome.tabs.captureVisibleTab(windowId, options)
+tp114
+a(Vchrome.tabs.executeScript
+VexecuteScript	Chrome tabs
+Vchrome.tabs.executeScript(tabId, details)
+tp115
+a(Vchrome.tabs.insertCSS
+VinsertCSS	Chrome tabs
+Vchrome.tabs.insertCSS(tabId, details)
+tp116
+a(Vchrome.tabs.onCreated.addListener
+VonCreated	Chrome tabs
+Vchrome.tabs.onCreated.addListener(function( tab ) {\u000a\u000a});
+tp117
+a(Vchrome.tabs.onUpdated.addListener
+VonUpdated	Chrome tabs
+Vchrome.tabs.onUpdated.addListener(function( tabId, changeInfo, tab ) {\u000a\u000a});
+tp118
+a(Vchrome.tabs.onMoved.addListener
+VonMoved	Chrome tabs
+Vchrome.tabs.onMoved.addListener(function( tabId, moveInfo ) {\u000a\u000a});
+tp119
+a(Vchrome.tabs.onActivated.addListener
+VonActivated	Chrome tabs
+Vchrome.tabs.onActivated.addListener(function( activeInfo ) {\u000a\u000a});
+tp120
+a(Vchrome.tabs.onHighlighted.addListener
+VonHighlighted	Chrome tabs
+Vchrome.tabs.onHighlighted.addListener(function( highlightInfo ) {\u000a\u000a});
+tp121
+a(Vchrome.tabs.onDetached.addListener
+VonDetached	Chrome tabs
+Vchrome.tabs.onDetached.addListener(function( tabId, detachInfo ) {\u000a\u000a});
+tp122
+a(Vchrome.tabs.onAttached.addListener
+VonAttached	Chrome tabs
+Vchrome.tabs.onAttached.addListener(function( tabId, attachInfo ) {\u000a\u000a});
+tp123
+a(Vchrome.tabs.onRemoved.addListener
+VonRemoved	Chrome tabs
+Vchrome.tabs.onRemoved.addListener(function( tabId, removeInfo ) {\u000a\u000a});
+tp124
+a(Vchrome.tabs.onReplaced.addListener
+VonReplaced	Chrome tabs
+Vchrome.tabs.onReplaced.addListener(function( addedTabId, removedTabId ) {\u000a\u000a});
+tp125
 a(Vchrome.bookmarks.get
 Vget	Chrome bookmarks
-Vchrome.bookmarks.get(idOrIdList, callback)
-tp105
-a(Vchrome.bookmarks.create
-Vcreate	Chrome bookmarks
-Vchrome.bookmarks.create(bookmark, callback)
-tp106
-a(Vchrome.bookmarks.move
-Vmove	Chrome bookmarks
-Vchrome.bookmarks.move(id, destination, callback)
-tp107
-a(Vchrome.bookmarks.update
-Vupdate	Chrome bookmarks
-Vchrome.bookmarks.update(id, changes, callback)
-tp108
-a(Vchrome.bookmarks.remove
-Vremove	Chrome bookmarks
-Vchrome.bookmarks.remove(id, callback)
-tp109
+Vchrome.bookmarks.get(idOrIdList)
+tp126
 a(Vchrome.bookmarks.getChildren
 VgetChildren	Chrome bookmarks
-Vchrome.bookmarks.getChildren(id, callback)
-tp110
-a(Vchrome.bookmarks.export
-Vexport	Chrome bookmarks
-Vchrome.bookmarks.export(callback)
-tp111
-a(Vchrome.bookmarks.removeTree
-VremoveTree	Chrome bookmarks
-Vchrome.bookmarks.removeTree(id, callback)
-tp112
+Vchrome.bookmarks.getChildren(id)
+tp127
+a(Vchrome.bookmarks.getRecent
+VgetRecent	Chrome bookmarks
+Vchrome.bookmarks.getRecent(numberOfItems)
+tp128
+a(Vchrome.bookmarks.getTree
+VgetTree	Chrome bookmarks
+Vchrome.bookmarks.getTree()
+tp129
 a(Vchrome.bookmarks.getSubTree
 VgetSubTree	Chrome bookmarks
-Vchrome.bookmarks.getSubTree(id, callback)
-tp113
+Vchrome.bookmarks.getSubTree(id)
+tp130
+a(Vchrome.bookmarks.search
+Vsearch	Chrome bookmarks
+Vchrome.bookmarks.search(query)
+tp131
+a(Vchrome.bookmarks.create
+Vcreate	Chrome bookmarks
+Vchrome.bookmarks.create(bookmark)
+tp132
+a(Vchrome.bookmarks.move
+Vmove	Chrome bookmarks
+Vchrome.bookmarks.move(id, destination)
+tp133
+a(Vchrome.bookmarks.update
+Vupdate	Chrome bookmarks
+Vchrome.bookmarks.update(id, changes)
+tp134
+a(Vchrome.bookmarks.remove
+Vremove	Chrome bookmarks
+Vchrome.bookmarks.remove(id)
+tp135
+a(Vchrome.bookmarks.removeTree
+VremoveTree	Chrome bookmarks
+Vchrome.bookmarks.removeTree(id)
+tp136
+a(Vchrome.bookmarks.onCreated.addListener
+VonCreated	Chrome bookmarks
+Vchrome.bookmarks.onCreated.addListener(function( id, bookmark ) {\u000a\u000a});
+tp137
+a(Vchrome.bookmarks.onRemoved.addListener
+VonRemoved	Chrome bookmarks
+Vchrome.bookmarks.onRemoved.addListener(function( id, removeInfo ) {\u000a\u000a});
+tp138
+a(Vchrome.bookmarks.onChanged.addListener
+VonChanged	Chrome bookmarks
+Vchrome.bookmarks.onChanged.addListener(function( id, changeInfo ) {\u000a\u000a});
+tp139
+a(Vchrome.bookmarks.onMoved.addListener
+VonMoved	Chrome bookmarks
+Vchrome.bookmarks.onMoved.addListener(function( id, moveInfo ) {\u000a\u000a});
+tp140
+a(Vchrome.bookmarks.onChildrenReordered.addListener
+VonChildrenReordered	Chrome bookmarks
+Vchrome.bookmarks.onChildrenReordered.addListener(function( id, reorderInfo ) {\u000a\u000a});
+tp141
+a(Vchrome.bookmarks.onImportBegan.addListener
+VonImportBegan	Chrome bookmarks
+Vchrome.bookmarks.onImportBegan.addListener(function(  ) {\u000a\u000a});
+tp142
+a(Vchrome.bookmarks.onImportEnded.addListener
+VonImportEnded	Chrome bookmarks
+Vchrome.bookmarks.onImportEnded.addListener(function(  ) {\u000a\u000a});
+tp143
 a(Vchrome.topSites.get
 Vget	Chrome topSites
-Vchrome.topSites.get(callback)
-tp114
-a(Vchrome.experimental.discovery.clearAllSuggestions
-VclearAllSuggestions	Chrome discovery
-Vchrome.experimental.discovery.clearAllSuggestions()
-tp115
+Vchrome.topSites.get()
+tp144
 a(Vchrome.experimental.discovery.suggest
 Vsuggest	Chrome discovery
 Vchrome.experimental.discovery.suggest(details)
-tp116
+tp145
 a(Vchrome.experimental.discovery.removeSuggestion
 VremoveSuggestion	Chrome discovery
 Vchrome.experimental.discovery.removeSuggestion(linkUrl)
-tp117
+tp146
+a(Vchrome.experimental.discovery.clearAllSuggestions
+VclearAllSuggestions	Chrome discovery
+Vchrome.experimental.discovery.clearAllSuggestions()
+tp147
 a(Vchrome.pageCapture.saveAsMHTML
 VsaveAsMHTML	Chrome pageCapture
-Vchrome.pageCapture.saveAsMHTML(details, callback)
-tp118
-a(Vchrome.idle.queryState
-VqueryState	Chrome idle
-Vchrome.idle.queryState(thresholdSeconds, callback)
-tp119
+Vchrome.pageCapture.saveAsMHTML(details)
+tp148
+a(Vchrome.ttsEngine.onSpeak.addListener
+VonSpeak	Chrome ttsEngine
+Vchrome.ttsEngine.onSpeak.addListener(function( utterance, options ) {\u000a\u000a});
+tp149
+a(Vchrome.ttsEngine.onStop.addListener
+VonStop	Chrome ttsEngine
+Vchrome.ttsEngine.onStop.addListener(function(  ) {\u000a\u000a});
+tp150
+a(Vchrome.devtools.inspectedWindow.eval
+Veval	Chrome devtools.inspectedWindow
+Vchrome.devtools.inspectedWindow.eval(expression)
+tp151
 a(Vchrome.devtools.inspectedWindow.reload
 Vreload	Chrome devtools.inspectedWindow
 Vchrome.devtools.inspectedWindow.reload(reloadOptions)
-tp120
-a(Vchrome.devtools.inspectedWindow.eval
-Veval	Chrome devtools.inspectedWindow
-Vchrome.devtools.inspectedWindow.eval(expression, callback)
-tp121
+tp152
 a(Vchrome.devtools.inspectedWindow.getResources
 VgetResources	Chrome devtools.inspectedWindow
-Vchrome.devtools.inspectedWindow.getResources(callback)
-tp122
+Vchrome.devtools.inspectedWindow.getResources()
+tp153
+a(Vchrome.devtools.inspectedWindow.onResourceAdded.addListener
+VonResourceAdded	Chrome devtools.inspectedWindow
+Vchrome.devtools.inspectedWindow.onResourceAdded.addListener(function( resource ) {\u000a\u000a});
+tp154
+a(Vchrome.devtools.inspectedWindow.onResourceContentCommitted.addListener
+VonResourceContentCommitted	Chrome devtools.inspectedWindow
+Vchrome.devtools.inspectedWindow.onResourceContentCommitted.addListener(function( resource, content ) {\u000a\u000a});
+tp155
 a(Vchrome.webRequest.handlerBehaviorChanged
 VhandlerBehaviorChanged	Chrome webRequest
-Vchrome.webRequest.handlerBehaviorChanged(callback)
-tp123
+Vchrome.webRequest.handlerBehaviorChanged()
+tp156
+a(Vchrome.webRequest.onBeforeRequest.addListener
+VonBeforeRequest	Chrome webRequest
+Vchrome.webRequest.onBeforeRequest.addListener(function( details ) {\u000a\u000a});
+tp157
+a(Vchrome.webRequest.onBeforeSendHeaders.addListener
+VonBeforeSendHeaders	Chrome webRequest
+Vchrome.webRequest.onBeforeSendHeaders.addListener(function( details ) {\u000a\u000a});
+tp158
+a(Vchrome.webRequest.onSendHeaders.addListener
+VonSendHeaders	Chrome webRequest
+Vchrome.webRequest.onSendHeaders.addListener(function( details ) {\u000a\u000a});
+tp159
+a(Vchrome.webRequest.onHeadersReceived.addListener
+VonHeadersReceived	Chrome webRequest
+Vchrome.webRequest.onHeadersReceived.addListener(function( deails ) {\u000a\u000a});
+tp160
+a(Vchrome.webRequest.onAuthRequired.addListener
+VonAuthRequired	Chrome webRequest
+Vchrome.webRequest.onAuthRequired.addListener(function( details ) {\u000a\u000a});
+tp161
+a(Vchrome.webRequest.onResponseStarted.addListener
+VonResponseStarted	Chrome webRequest
+Vchrome.webRequest.onResponseStarted.addListener(function( details ) {\u000a\u000a});
+tp162
+a(Vchrome.webRequest.onBeforeRedirect.addListener
+VonBeforeRedirect	Chrome webRequest
+Vchrome.webRequest.onBeforeRedirect.addListener(function( details ) {\u000a\u000a});
+tp163
+a(Vchrome.webRequest.onCompleted.addListener
+VonCompleted	Chrome webRequest
+Vchrome.webRequest.onCompleted.addListener(function( details ) {\u000a\u000a});
+tp164
+a(Vchrome.webRequest.onErrorOccurred.addListener
+VonErrorOccurred	Chrome webRequest
+Vchrome.webRequest.onErrorOccurred.addListener(function( details ) {\u000a\u000a});
+tp165
+a(Vchrome.tabCapture.capture
+Vcapture	Chrome tabCapture
+Vchrome.tabCapture.capture(options)
+tp166
+a(Vchrome.tabCapture.getCapturedTabs
+VgetCapturedTabs	Chrome tabCapture
+Vchrome.tabCapture.getCapturedTabs()
+tp167
+a(Vchrome.tabCapture.onStatusChanged.addListener
+VonStatusChanged	Chrome tabCapture
+Vchrome.tabCapture.onStatusChanged.addListener(function( info ) {\u000a\u000a});
+tp168
+a(Vchrome.downloads.download
+Vdownload	Chrome downloads
+Vchrome.downloads.download(options)
+tp169
 a(Vchrome.downloads.search
 Vsearch	Chrome downloads
-Vchrome.downloads.search(query, SearchCallback)
-tp124
+Vchrome.downloads.search(query)
+tp170
 a(Vchrome.downloads.pause
 Vpause	Chrome downloads
-Vchrome.downloads.pause(downloadId, NullCallback)
-tp125
-a(Vchrome.downloads.getFileIcon
-VgetFileIcon	Chrome downloads
-Vchrome.downloads.getFileIcon(downloadId, options, GetFileIconCallback)
-tp126
+Vchrome.downloads.pause(downloadId)
+tp171
 a(Vchrome.downloads.resume
 Vresume	Chrome downloads
-Vchrome.downloads.resume(downloadId, NullCallback)
-tp127
+Vchrome.downloads.resume(downloadId)
+tp172
+a(Vchrome.downloads.cancel
+Vcancel	Chrome downloads
+Vchrome.downloads.cancel(downloadId)
+tp173
+a(Vchrome.downloads.getFileIcon
+VgetFileIcon	Chrome downloads
+Vchrome.downloads.getFileIcon(downloadId, options)
+tp174
+a(Vchrome.downloads.open
+Vopen	Chrome downloads
+Vchrome.downloads.open(downloadId)
+tp175
 a(Vchrome.downloads.show
 Vshow	Chrome downloads
 Vchrome.downloads.show(downloadId)
-tp128
-a(Vchrome.downloads.setDestination
-VsetDestination	Chrome downloads
-Vchrome.downloads.setDestination(downloadId, relativePath)
-tp129
-a(Vchrome.downloads.cancel
-Vcancel	Chrome downloads
-Vchrome.downloads.cancel(downloadId, NullCallback)
-tp130
+tp176
+a(Vchrome.downloads.erase
+Verase	Chrome downloads
+Vchrome.downloads.erase(query)
+tp177
 a(Vchrome.downloads.drag
 Vdrag	Chrome downloads
 Vchrome.downloads.drag(downloadId)
-tp131
-a(Vchrome.downloads.download
-Vdownload	Chrome downloads
-Vchrome.downloads.download(options, DownloadCallback)
-tp132
-a(Vchrome.tts.isSpeaking
-VisSpeaking	Chrome tts
-Vchrome.tts.isSpeaking(callback)
-tp133
+tp178
+a(Vchrome.downloads.onCreated.addListener
+VonCreated	Chrome downloads
+Vchrome.downloads.onCreated.addListener(function( downloadItem ) {\u000a\u000a});
+tp179
+a(Vchrome.downloads.onErased.addListener
+VonErased	Chrome downloads
+Vchrome.downloads.onErased.addListener(function( downloadId ) {\u000a\u000a});
+tp180
+a(Vchrome.downloads.onChanged.addListener
+VonChanged	Chrome downloads
+Vchrome.downloads.onChanged.addListener(function( downloadDelta ) {\u000a\u000a});
+tp181
+a(Vchrome.tts.speak
+Vspeak	Chrome tts
+Vchrome.tts.speak(utterance, options)
+tp182
 a(Vchrome.tts.stop
 Vstop	Chrome tts
 Vchrome.tts.stop()
-tp134
+tp183
+a(Vchrome.tts.isSpeaking
+VisSpeaking	Chrome tts
+Vchrome.tts.isSpeaking()
+tp184
 a(Vchrome.tts.getVoices
 VgetVoices	Chrome tts
-Vchrome.tts.getVoices(callback)
-tp135
-a(Vchrome.tts.speak
-Vspeak	Chrome tts
-Vchrome.tts.speak(utterance, options, callback)
-tp136
+Vchrome.tts.getVoices()
+tp185
 a(Vchrome.windows.get
 Vget	Chrome windows
-Vchrome.windows.get(windowId, getInfo, callback)
-tp137
+Vchrome.windows.get(windowId, getInfo)
+tp186
 a(Vchrome.windows.getCurrent
 VgetCurrent	Chrome windows
-Vchrome.windows.getCurrent(getInfo, callback)
-tp138
-a(Vchrome.windows.create
-Vcreate	Chrome windows
-Vchrome.windows.create(createData, callback)
-tp139
-a(Vchrome.windows.getAll
-VgetAll	Chrome windows
-Vchrome.windows.getAll(getInfo, callback)
-tp140
-a(Vchrome.windows.update
-Vupdate	Chrome windows
-Vchrome.windows.update(windowId, updateInfo, callback)
-tp141
-a(Vchrome.windows.remove
-Vremove	Chrome windows
-Vchrome.windows.remove(windowId, callback)
-tp142
+Vchrome.windows.getCurrent(getInfo)
+tp187
 a(Vchrome.windows.getLastFocused
 VgetLastFocused	Chrome windows
-Vchrome.windows.getLastFocused(getInfo, callback)
-tp143
+Vchrome.windows.getLastFocused(getInfo)
+tp188
+a(Vchrome.windows.getAll
+VgetAll	Chrome windows
+Vchrome.windows.getAll(getInfo)
+tp189
+a(Vchrome.windows.create
+Vcreate	Chrome windows
+Vchrome.windows.create(createData)
+tp190
+a(Vchrome.windows.update
+Vupdate	Chrome windows
+Vchrome.windows.update(windowId, updateInfo)
+tp191
+a(Vchrome.windows.remove
+Vremove	Chrome windows
+Vchrome.windows.remove(windowId)
+tp192
+a(Vchrome.windows.onCreated.addListener
+VonCreated	Chrome windows
+Vchrome.windows.onCreated.addListener(function( window ) {\u000a\u000a});
+tp193
+a(Vchrome.windows.onRemoved.addListener
+VonRemoved	Chrome windows
+Vchrome.windows.onRemoved.addListener(function( windowId ) {\u000a\u000a});
+tp194
+a(Vchrome.windows.onFocusChanged.addListener
+VonFocusChanged	Chrome windows
+Vchrome.windows.onFocusChanged.addListener(function( windowId ) {\u000a\u000a});
+tp195
 a(Vchrome.omnibox.setDefaultSuggestion
 VsetDefaultSuggestion	Chrome omnibox
 Vchrome.omnibox.setDefaultSuggestion(suggestion)
-tp144
-a(Vchrome.permissions.contains
-Vcontains	Chrome permissions
-Vchrome.permissions.contains(permissions, callback)
-tp145
+tp196
+a(Vchrome.omnibox.onInputStarted.addListener
+VonInputStarted	Chrome omnibox
+Vchrome.omnibox.onInputStarted.addListener(function(  ) {\u000a\u000a});
+tp197
+a(Vchrome.omnibox.onInputChanged.addListener
+VonInputChanged	Chrome omnibox
+Vchrome.omnibox.onInputChanged.addListener(function( text ) {\u000a\u000a});
+tp198
+a(Vchrome.omnibox.onInputEntered.addListener
+VonInputEntered	Chrome omnibox
+Vchrome.omnibox.onInputEntered.addListener(function( text ) {\u000a\u000a});
+tp199
+a(Vchrome.omnibox.onInputCancelled.addListener
+VonInputCancelled	Chrome omnibox
+Vchrome.omnibox.onInputCancelled.addListener(function(  ) {\u000a\u000a});
+tp200
 a(Vchrome.permissions.getAll
 VgetAll	Chrome permissions
-Vchrome.permissions.getAll(callback)
-tp146
+Vchrome.permissions.getAll()
+tp201
+a(Vchrome.permissions.contains
+Vcontains	Chrome permissions
+Vchrome.permissions.contains(permissions)
+tp202
 a(Vchrome.permissions.request
 Vrequest	Chrome permissions
-Vchrome.permissions.request(permissions, callback)
-tp147
+Vchrome.permissions.request(permissions)
+tp203
 a(Vchrome.permissions.remove
 Vremove	Chrome permissions
-Vchrome.permissions.remove(permissions, callback)
-tp148
+Vchrome.permissions.remove(permissions)
+tp204
+a(Vchrome.permissions.onAdded.addListener
+VonAdded	Chrome permissions
+Vchrome.permissions.onAdded.addListener(function( permissions ) {\u000a\u000a});
+tp205
+a(Vchrome.permissions.onRemoved.addListener
+VonRemoved	Chrome permissions
+Vchrome.permissions.onRemoved.addListener(function( permissions ) {\u000a\u000a});
+tp206
 a(Vchrome.experimental.infobars.show
 Vshow	Chrome infobars
-Vchrome.experimental.infobars.show(details, callback)
-tp149
-a(Vchrome.fontSettings.setDefaultFontSize
-VsetDefaultFontSize	Chrome fontSettings
-Vchrome.fontSettings.setDefaultFontSize(details, callback)
-tp150
-a(Vchrome.fontSettings.getFont
-VgetFont	Chrome fontSettings
-Vchrome.fontSettings.getFont(details, callback)
-tp151
-a(Vchrome.fontSettings.getDefaultFontSize
-VgetDefaultFontSize	Chrome fontSettings
-Vchrome.fontSettings.getDefaultFontSize(details, callback)
-tp152
-a(Vchrome.fontSettings.getMinimumFontSize
-VgetMinimumFontSize	Chrome fontSettings
-Vchrome.fontSettings.getMinimumFontSize(details, callback)
-tp153
-a(Vchrome.fontSettings.setMinimumFontSize
-VsetMinimumFontSize	Chrome fontSettings
-Vchrome.fontSettings.setMinimumFontSize(details, callback)
-tp154
-a(Vchrome.fontSettings.getDefaultFixedFontSize
-VgetDefaultFixedFontSize	Chrome fontSettings
-Vchrome.fontSettings.getDefaultFixedFontSize(details, callback)
-tp155
-a(Vchrome.fontSettings.clearDefaultFontSize
-VclearDefaultFontSize	Chrome fontSettings
-Vchrome.fontSettings.clearDefaultFontSize(details, callback)
-tp156
-a(Vchrome.fontSettings.setDefaultFixedFontSize
-VsetDefaultFixedFontSize	Chrome fontSettings
-Vchrome.fontSettings.setDefaultFixedFontSize(details, callback)
-tp157
+Vchrome.experimental.infobars.show(details)
+tp207
 a(Vchrome.fontSettings.clearFont
 VclearFont	Chrome fontSettings
-Vchrome.fontSettings.clearFont(details, callback)
-tp158
+Vchrome.fontSettings.clearFont(details)
+tp208
+a(Vchrome.fontSettings.getFont
+VgetFont	Chrome fontSettings
+Vchrome.fontSettings.getFont(details)
+tp209
 a(Vchrome.fontSettings.setFont
 VsetFont	Chrome fontSettings
-Vchrome.fontSettings.setFont(details, callback)
-tp159
-a(Vchrome.fontSettings.clearMinimumFontSize
-VclearMinimumFontSize	Chrome fontSettings
-Vchrome.fontSettings.clearMinimumFontSize(details, callback)
-tp160
+Vchrome.fontSettings.setFont(details)
+tp210
 a(Vchrome.fontSettings.getFontList
 VgetFontList	Chrome fontSettings
-Vchrome.fontSettings.getFontList(callback)
-tp161
+Vchrome.fontSettings.getFontList()
+tp211
+a(Vchrome.fontSettings.clearDefaultFontSize
+VclearDefaultFontSize	Chrome fontSettings
+Vchrome.fontSettings.clearDefaultFontSize(details)
+tp212
+a(Vchrome.fontSettings.getDefaultFontSize
+VgetDefaultFontSize	Chrome fontSettings
+Vchrome.fontSettings.getDefaultFontSize(details)
+tp213
+a(Vchrome.fontSettings.setDefaultFontSize
+VsetDefaultFontSize	Chrome fontSettings
+Vchrome.fontSettings.setDefaultFontSize(details)
+tp214
 a(Vchrome.fontSettings.clearDefaultFixedFontSize
 VclearDefaultFixedFontSize	Chrome fontSettings
-Vchrome.fontSettings.clearDefaultFixedFontSize(details, callback)
-tp162
+Vchrome.fontSettings.clearDefaultFixedFontSize(details)
+tp215
+a(Vchrome.fontSettings.getDefaultFixedFontSize
+VgetDefaultFixedFontSize	Chrome fontSettings
+Vchrome.fontSettings.getDefaultFixedFontSize(details)
+tp216
+a(Vchrome.fontSettings.setDefaultFixedFontSize
+VsetDefaultFixedFontSize	Chrome fontSettings
+Vchrome.fontSettings.setDefaultFixedFontSize(details)
+tp217
+a(Vchrome.fontSettings.clearMinimumFontSize
+VclearMinimumFontSize	Chrome fontSettings
+Vchrome.fontSettings.clearMinimumFontSize(details)
+tp218
+a(Vchrome.fontSettings.getMinimumFontSize
+VgetMinimumFontSize	Chrome fontSettings
+Vchrome.fontSettings.getMinimumFontSize(details)
+tp219
+a(Vchrome.fontSettings.setMinimumFontSize
+VsetMinimumFontSize	Chrome fontSettings
+Vchrome.fontSettings.setMinimumFontSize(details)
+tp220
+a(Vchrome.fontSettings.onFontChanged.addListener
+VonFontChanged	Chrome fontSettings
+Vchrome.fontSettings.onFontChanged.addListener(function( details ) {\u000a\u000a});
+tp221
+a(Vchrome.fontSettings.onDefaultFontSizeChanged.addListener
+VonDefaultFontSizeChanged	Chrome fontSettings
+Vchrome.fontSettings.onDefaultFontSizeChanged.addListener(function( details ) {\u000a\u000a});
+tp222
+a(Vchrome.fontSettings.onDefaultFixedFontSizeChanged.addListener
+VonDefaultFixedFontSizeChanged	Chrome fontSettings
+Vchrome.fontSettings.onDefaultFixedFontSizeChanged.addListener(function( details ) {\u000a\u000a});
+tp223
+a(Vchrome.fontSettings.onMinimumFontSizeChanged.addListener
+VonMinimumFontSizeChanged	Chrome fontSettings
+Vchrome.fontSettings.onMinimumFontSizeChanged.addListener(function( details ) {\u000a\u000a});
+tp224
 a(Vchrome.experimental.history.getMostVisited
 VgetMostVisited	Chrome history
-Vchrome.experimental.history.getMostVisited(details, callback)
-tp163
-a(Vchrome.scriptBadge.getPopup
-VgetPopup	Chrome scriptBadge
-Vchrome.scriptBadge.getPopup(details, callback)
-tp164
-a(Vchrome.scriptBadge.getAttention
-VgetAttention	Chrome scriptBadge
-Vchrome.scriptBadge.getAttention(details)
-tp165
+Vchrome.experimental.history.getMostVisited(details)
+tp225
 a(Vchrome.scriptBadge.setPopup
 VsetPopup	Chrome scriptBadge
 Vchrome.scriptBadge.setPopup(details)
-tp166
+tp226
+a(Vchrome.scriptBadge.getPopup
+VgetPopup	Chrome scriptBadge
+Vchrome.scriptBadge.getPopup(details)
+tp227
+a(Vchrome.scriptBadge.getAttention
+VgetAttention	Chrome scriptBadge
+Vchrome.scriptBadge.getAttention(details)
+tp228
+a(Vchrome.scriptBadge.onClicked.addListener
+VonClicked	Chrome scriptBadge
+Vchrome.scriptBadge.onClicked.addListener(function( tab ) {\u000a\u000a});
+tp229
 a(Vchrome.webNavigation.getFrame
 VgetFrame	Chrome webNavigation
-Vchrome.webNavigation.getFrame(details, callback)
-tp167
+Vchrome.webNavigation.getFrame(details)
+tp230
 a(Vchrome.webNavigation.getAllFrames
 VgetAllFrames	Chrome webNavigation
-Vchrome.webNavigation.getAllFrames(details, callback)
-tp168
-a(Vchrome.browserAction.enable
-Venable	Chrome browserAction
-Vchrome.browserAction.enable(tabId)
-tp169
-a(Vchrome.browserAction.setBadgeBackgroundColor
-VsetBadgeBackgroundColor	Chrome browserAction
-Vchrome.browserAction.setBadgeBackgroundColor(details)
-tp170
-a(Vchrome.browserAction.setBadgeText
-VsetBadgeText	Chrome browserAction
-Vchrome.browserAction.setBadgeText(details)
-tp171
+Vchrome.webNavigation.getAllFrames(details)
+tp231
+a(Vchrome.webNavigation.onBeforeNavigate.addListener
+VonBeforeNavigate	Chrome webNavigation
+Vchrome.webNavigation.onBeforeNavigate.addListener(function( details ) {\u000a\u000a});
+tp232
+a(Vchrome.webNavigation.onCommitted.addListener
+VonCommitted	Chrome webNavigation
+Vchrome.webNavigation.onCommitted.addListener(function( details ) {\u000a\u000a});
+tp233
+a(Vchrome.webNavigation.onDOMContentLoaded.addListener
+VonDOMContentLoaded	Chrome webNavigation
+Vchrome.webNavigation.onDOMContentLoaded.addListener(function( details ) {\u000a\u000a});
+tp234
+a(Vchrome.webNavigation.onCompleted.addListener
+VonCompleted	Chrome webNavigation
+Vchrome.webNavigation.onCompleted.addListener(function( details ) {\u000a\u000a});
+tp235
+a(Vchrome.webNavigation.onErrorOccurred.addListener
+VonErrorOccurred	Chrome webNavigation
+Vchrome.webNavigation.onErrorOccurred.addListener(function( details ) {\u000a\u000a});
+tp236
+a(Vchrome.webNavigation.onCreatedNavigationTarget.addListener
+VonCreatedNavigationTarget	Chrome webNavigation
+Vchrome.webNavigation.onCreatedNavigationTarget.addListener(function( details ) {\u000a\u000a});
+tp237
+a(Vchrome.webNavigation.onReferenceFragmentUpdated.addListener
+VonReferenceFragmentUpdated	Chrome webNavigation
+Vchrome.webNavigation.onReferenceFragmentUpdated.addListener(function( details ) {\u000a\u000a});
+tp238
+a(Vchrome.webNavigation.onTabReplaced.addListener
+VonTabReplaced	Chrome webNavigation
+Vchrome.webNavigation.onTabReplaced.addListener(function( details ) {\u000a\u000a});
+tp239
+a(Vchrome.webNavigation.onHistoryStateUpdated.addListener
+VonHistoryStateUpdated	Chrome webNavigation
+Vchrome.webNavigation.onHistoryStateUpdated.addListener(function( details ) {\u000a\u000a});
+tp240
 a(Vchrome.browserAction.setTitle
 VsetTitle	Chrome browserAction
 Vchrome.browserAction.setTitle(details)
-tp172
-a(Vchrome.browserAction.getBadgeText
-VgetBadgeText	Chrome browserAction
-Vchrome.browserAction.getBadgeText(details, callback)
-tp173
+tp241
+a(Vchrome.browserAction.getTitle
+VgetTitle	Chrome browserAction
+Vchrome.browserAction.getTitle(details)
+tp242
+a(Vchrome.browserAction.setIcon
+VsetIcon	Chrome browserAction
+Vchrome.browserAction.setIcon(details)
+tp243
 a(Vchrome.browserAction.setPopup
 VsetPopup	Chrome browserAction
 Vchrome.browserAction.setPopup(details)
-tp174
+tp244
+a(Vchrome.browserAction.getPopup
+VgetPopup	Chrome browserAction
+Vchrome.browserAction.getPopup(details)
+tp245
+a(Vchrome.browserAction.setBadgeText
+VsetBadgeText	Chrome browserAction
+Vchrome.browserAction.setBadgeText(details)
+tp246
+a(Vchrome.browserAction.getBadgeText
+VgetBadgeText	Chrome browserAction
+Vchrome.browserAction.getBadgeText(details)
+tp247
+a(Vchrome.browserAction.setBadgeBackgroundColor
+VsetBadgeBackgroundColor	Chrome browserAction
+Vchrome.browserAction.setBadgeBackgroundColor(details)
+tp248
+a(Vchrome.browserAction.getBadgeBackgroundColor
+VgetBadgeBackgroundColor	Chrome browserAction
+Vchrome.browserAction.getBadgeBackgroundColor(details)
+tp249
+a(Vchrome.browserAction.enable
+Venable	Chrome browserAction
+Vchrome.browserAction.enable(tabId)
+tp250
 a(Vchrome.browserAction.disable
 Vdisable	Chrome browserAction
 Vchrome.browserAction.disable(tabId)
-tp175
-a(Vchrome.browserAction.getTitle
-VgetTitle	Chrome browserAction
-Vchrome.browserAction.getTitle(details, callback)
-tp176
-a(Vchrome.browserAction.getBadgeBackgroundColor
-VgetBadgeBackgroundColor	Chrome browserAction
-Vchrome.browserAction.getBadgeBackgroundColor(details, callback)
-tp177
-a(Vchrome.browserAction.getPopup
-VgetPopup	Chrome browserAction
-Vchrome.browserAction.getPopup(details, callback)
-tp178
-a(Vchrome.browserAction.setIcon
-VsetIcon	Chrome browserAction
-Vchrome.browserAction.setIcon(details, callback)
-tp179
-a(Vchrome.input.ime.setMenuItems
-VsetMenuItems	Chrome input.ime
-Vchrome.input.ime.setMenuItems(parameters, callback)
-tp180
-a(Vchrome.input.ime.commitText
-VcommitText	Chrome input.ime
-Vchrome.input.ime.commitText(parameters, callback)
-tp181
-a(Vchrome.input.ime.setCandidates
-VsetCandidates	Chrome input.ime
-Vchrome.input.ime.setCandidates(parameters, callback)
-tp182
+tp251
+a(Vchrome.browserAction.onClicked.addListener
+VonClicked	Chrome browserAction
+Vchrome.browserAction.onClicked.addListener(function( tab ) {\u000a\u000a});
+tp252
 a(Vchrome.input.ime.setComposition
 VsetComposition	Chrome input.ime
-Vchrome.input.ime.setComposition(parameters, callback)
-tp183
-a(Vchrome.input.ime.updateMenuItems
-VupdateMenuItems	Chrome input.ime
-Vchrome.input.ime.updateMenuItems(parameters, callback)
-tp184
-a(Vchrome.input.ime.setCandidateWindowProperties
-VsetCandidateWindowProperties	Chrome input.ime
-Vchrome.input.ime.setCandidateWindowProperties(parameters, callback)
-tp185
+Vchrome.input.ime.setComposition(parameters)
+tp253
 a(Vchrome.input.ime.clearComposition
 VclearComposition	Chrome input.ime
-Vchrome.input.ime.clearComposition(parameters, callback)
-tp186
+Vchrome.input.ime.clearComposition(parameters)
+tp254
+a(Vchrome.input.ime.commitText
+VcommitText	Chrome input.ime
+Vchrome.input.ime.commitText(parameters)
+tp255
+a(Vchrome.input.ime.setCandidateWindowProperties
+VsetCandidateWindowProperties	Chrome input.ime
+Vchrome.input.ime.setCandidateWindowProperties(parameters)
+tp256
+a(Vchrome.input.ime.setCandidates
+VsetCandidates	Chrome input.ime
+Vchrome.input.ime.setCandidates(parameters)
+tp257
 a(Vchrome.input.ime.setCursorPosition
 VsetCursorPosition	Chrome input.ime
-Vchrome.input.ime.setCursorPosition(parameters, callback)
-tp187
+Vchrome.input.ime.setCursorPosition(parameters)
+tp258
+a(Vchrome.input.ime.setMenuItems
+VsetMenuItems	Chrome input.ime
+Vchrome.input.ime.setMenuItems(parameters)
+tp259
+a(Vchrome.input.ime.updateMenuItems
+VupdateMenuItems	Chrome input.ime
+Vchrome.input.ime.updateMenuItems(parameters)
+tp260
+a(Vchrome.input.ime.keyEventHandled
+VkeyEventHandled	Chrome input.ime
+Vchrome.input.ime.keyEventHandled(requestId, response)
+tp261
+a(Vchrome.input.ime.onActivate.addListener
+VonActivate	Chrome input.ime
+Vchrome.input.ime.onActivate.addListener(function( engineID ) {\u000a\u000a});
+tp262
+a(Vchrome.input.ime.onDeactivated.addListener
+VonDeactivated	Chrome input.ime
+Vchrome.input.ime.onDeactivated.addListener(function( engineID ) {\u000a\u000a});
+tp263
+a(Vchrome.input.ime.onFocus.addListener
+VonFocus	Chrome input.ime
+Vchrome.input.ime.onFocus.addListener(function( context ) {\u000a\u000a});
+tp264
+a(Vchrome.input.ime.onBlur.addListener
+VonBlur	Chrome input.ime
+Vchrome.input.ime.onBlur.addListener(function( contextID ) {\u000a\u000a});
+tp265
+a(Vchrome.input.ime.onInputContextUpdate.addListener
+VonInputContextUpdate	Chrome input.ime
+Vchrome.input.ime.onInputContextUpdate.addListener(function( context ) {\u000a\u000a});
+tp266
+a(Vchrome.input.ime.onKeyEvent.addListener
+VonKeyEvent	Chrome input.ime
+Vchrome.input.ime.onKeyEvent.addListener(function( engineID, keyData ) {\u000a\u000a});
+tp267
+a(Vchrome.input.ime.onCandidateClicked.addListener
+VonCandidateClicked	Chrome input.ime
+Vchrome.input.ime.onCandidateClicked.addListener(function( engineID, candidateID, button ) {\u000a\u000a});
+tp268
+a(Vchrome.input.ime.onMenuItemActivated.addListener
+VonMenuItemActivated	Chrome input.ime
+Vchrome.input.ime.onMenuItemActivated.addListener(function( engineID, name ) {\u000a\u000a});
+tp269
 a(Vchrome.history.search
 Vsearch	Chrome history
-Vchrome.history.search(query, callback)
-tp188
-a(Vchrome.history.addUrl
-VaddUrl	Chrome history
-Vchrome.history.addUrl(details, callback)
-tp189
-a(Vchrome.history.deleteRange
-VdeleteRange	Chrome history
-Vchrome.history.deleteRange(range, callback)
-tp190
-a(Vchrome.history.deleteAll
-VdeleteAll	Chrome history
-Vchrome.history.deleteAll(callback)
-tp191
+Vchrome.history.search(query)
+tp270
 a(Vchrome.history.getVisits
 VgetVisits	Chrome history
-Vchrome.history.getVisits(details, callback)
-tp192
+Vchrome.history.getVisits(details)
+tp271
+a(Vchrome.history.addUrl
+VaddUrl	Chrome history
+Vchrome.history.addUrl(details)
+tp272
 a(Vchrome.history.deleteUrl
 VdeleteUrl	Chrome history
-Vchrome.history.deleteUrl(details, callback)
-tp193
+Vchrome.history.deleteUrl(details)
+tp273
+a(Vchrome.history.deleteRange
+VdeleteRange	Chrome history
+Vchrome.history.deleteRange(range)
+tp274
+a(Vchrome.history.deleteAll
+VdeleteAll	Chrome history
+Vchrome.history.deleteAll()
+tp275
+a(Vchrome.history.onVisited.addListener
+VonVisited	Chrome history
+Vchrome.history.onVisited.addListener(function( result ) {\u000a\u000a});
+tp276
+a(Vchrome.history.onVisitRemoved.addListener
+VonVisitRemoved	Chrome history
+Vchrome.history.onVisitRemoved.addListener(function( removed ) {\u000a\u000a});
+tp277
 a(Vchrome.experimental.devtools.audits.addCategory
 VaddCategory	Chrome devtools.audits
 Vchrome.experimental.devtools.audits.addCategory(displayName, resultCount)
-tp194
-a(Vchrome.pageAction.hide
-Vhide	Chrome pageAction
-Vchrome.pageAction.hide(tabId)
-tp195
+tp278
 a(Vchrome.pageAction.show
 Vshow	Chrome pageAction
 Vchrome.pageAction.show(tabId)
-tp196
+tp279
+a(Vchrome.pageAction.hide
+Vhide	Chrome pageAction
+Vchrome.pageAction.hide(tabId)
+tp280
 a(Vchrome.pageAction.setTitle
 VsetTitle	Chrome pageAction
 Vchrome.pageAction.setTitle(details)
-tp197
+tp281
+a(Vchrome.pageAction.getTitle
+VgetTitle	Chrome pageAction
+Vchrome.pageAction.getTitle(details)
+tp282
+a(Vchrome.pageAction.setIcon
+VsetIcon	Chrome pageAction
+Vchrome.pageAction.setIcon(details)
+tp283
 a(Vchrome.pageAction.setPopup
 VsetPopup	Chrome pageAction
 Vchrome.pageAction.setPopup(details)
-tp198
-a(Vchrome.pageAction.getTitle
-VgetTitle	Chrome pageAction
-Vchrome.pageAction.getTitle(details, callback)
-tp199
+tp284
 a(Vchrome.pageAction.getPopup
 VgetPopup	Chrome pageAction
-Vchrome.pageAction.getPopup(details, callback)
-tp200
-a(Vchrome.pageAction.setIcon
-VsetIcon	Chrome pageAction
-Vchrome.pageAction.setIcon(details, callback)
-tp201
+Vchrome.pageAction.getPopup(details)
+tp285
+a(Vchrome.pageAction.onClicked.addListener
+VonClicked	Chrome pageAction
+Vchrome.pageAction.onClicked.addListener(function( tab ) {\u000a\u000a});
+tp286
 a(Vchrome.devtools.panels.create
 Vcreate	Chrome devtools.panels
-Vchrome.devtools.panels.create(title, iconPath, pagePath, callback)
-tp202
+Vchrome.devtools.panels.create(title, iconPath, pagePath)
+tp287
 a(Vchrome.devtools.panels.setOpenResourceHandler
 VsetOpenResourceHandler	Chrome devtools.panels
-Vchrome.devtools.panels.setOpenResourceHandler(callback)
-tp203
-a(Vchrome.cookies.getAllCookieStores
-VgetAllCookieStores	Chrome cookies
-Vchrome.cookies.getAllCookieStores(callback)
-tp204
-a(Vchrome.cookies.getAll
-VgetAll	Chrome cookies
-Vchrome.cookies.getAll(details, callback)
-tp205
-a(Vchrome.cookies.set
-Vset	Chrome cookies
-Vchrome.cookies.set(details, callback)
-tp206
-a(Vchrome.cookies.remove
-Vremove	Chrome cookies
-Vchrome.cookies.remove(details, callback)
-tp207
+Vchrome.devtools.panels.setOpenResourceHandler()
+tp288
 a(Vchrome.cookies.get
 Vget	Chrome cookies
-Vchrome.cookies.get(details, callback)
-tp208
-a(Vchrome.experimental.usb.isochronousTransfer
-VisochronousTransfer	Chrome usb
-Vchrome.experimental.usb.isochronousTransfer(device, transferInfo, TransferCallback)
-tp209
-a(Vchrome.experimental.usb.closeDevice
-VcloseDevice	Chrome usb
-Vchrome.experimental.usb.closeDevice(device)
-tp210
-a(Vchrome.experimental.usb.findDevice
-VfindDevice	Chrome usb
-Vchrome.experimental.usb.findDevice(vendorId, productId, options, FindDeviceCallback)
-tp211
-a(Vchrome.experimental.usb.setInterfaceAlternateSetting
-VsetInterfaceAlternateSetting	Chrome usb
-Vchrome.experimental.usb.setInterfaceAlternateSetting(device, interfaceNumber, alternateSetting, VoidCallback)
-tp212
-a(Vchrome.experimental.usb.interruptTransfer
-VinterruptTransfer	Chrome usb
-Vchrome.experimental.usb.interruptTransfer(device, transferInfo, TransferCallback)
-tp213
-a(Vchrome.experimental.usb.releaseInterface
-VreleaseInterface	Chrome usb
-Vchrome.experimental.usb.releaseInterface(device, interfaceNumber, VoidCallback)
-tp214
-a(Vchrome.experimental.usb.bulkTransfer
-VbulkTransfer	Chrome usb
-Vchrome.experimental.usb.bulkTransfer(device, transferInfo, TransferCallback)
-tp215
-a(Vchrome.experimental.usb.claimInterface
-VclaimInterface	Chrome usb
-Vchrome.experimental.usb.claimInterface(device, interfaceNumber, VoidCallback)
-tp216
-a(Vchrome.experimental.usb.controlTransfer
-VcontrolTransfer	Chrome usb
-Vchrome.experimental.usb.controlTransfer(device, transferInfo, TransferCallback)
-tp217
+Vchrome.cookies.get(details)
+tp289
+a(Vchrome.cookies.getAll
+VgetAll	Chrome cookies
+Vchrome.cookies.getAll(details)
+tp290
+a(Vchrome.cookies.set
+Vset	Chrome cookies
+Vchrome.cookies.set(details)
+tp291
+a(Vchrome.cookies.remove
+Vremove	Chrome cookies
+Vchrome.cookies.remove(details)
+tp292
+a(Vchrome.cookies.getAllCookieStores
+VgetAllCookieStores	Chrome cookies
+Vchrome.cookies.getAllCookieStores()
+tp293
+a(Vchrome.cookies.onChanged.addListener
+VonChanged	Chrome cookies
+Vchrome.cookies.onChanged.addListener(function( changeInfo ) {\u000a\u000a});
+tp294
+a(Vchrome.proxy.onProxyError.addListener
+VonProxyError	Chrome proxy
+Vchrome.proxy.onProxyError.addListener(function( details ) {\u000a\u000a});
+tp295
+a(Vchrome.storage.onChanged.addListener
+VonChanged	Chrome storage
+Vchrome.storage.onChanged.addListener(function( changes, areaName ) {\u000a\u000a});
+tp296
+a(Vchrome.pushMessaging.getChannelId
+VgetChannelId	Chrome pushMessaging
+Vchrome.pushMessaging.getChannelId(interactive)
+tp297
+a(Vchrome.pushMessaging.onMessage.addListener
+VonMessage	Chrome pushMessaging
+Vchrome.pushMessaging.onMessage.addListener(function( message ) {\u000a\u000a});
+tp298
 a(Vchrome.debugger.attach
 Vattach	Chrome debugger
-Vchrome.debugger.attach(target, requiredVersion, callback)
-tp218
+Vchrome.debugger.attach(target, requiredVersion)
+tp299
 a(Vchrome.debugger.detach
 Vdetach	Chrome debugger
-Vchrome.debugger.detach(target, callback)
-tp219
+Vchrome.debugger.detach(target)
+tp300
 a(Vchrome.debugger.sendCommand
 VsendCommand	Chrome debugger
-Vchrome.debugger.sendCommand(target, method, commandParams, callback)
-tp220
+Vchrome.debugger.sendCommand(target, method, commandParams)
+tp301
+a(Vchrome.debugger.onEvent.addListener
+VonEvent	Chrome debugger
+Vchrome.debugger.onEvent.addListener(function( source, method, params ) {\u000a\u000a});
+tp302
+a(Vchrome.debugger.onDetach.addListener
+VonDetach	Chrome debugger
+Vchrome.debugger.onDetach.addListener(function( source, reason ) {\u000a\u000a});
+tp303
 a.
