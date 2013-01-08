@@ -1,5 +1,6 @@
 import sublime, sublime_plugin
 import os, re
+import ChromeApp
 
 def get_samplename_from_file(path):
     match = re.compile(r"^.*\/([^\.\/]+)\.sublime-snippet$").match(path)
@@ -19,7 +20,7 @@ def listfiles(dir_name):
 class new_chrome(sublime_plugin.WindowCommand):
     def run(self, name):
         dir_name = os.path.join(sublime.packages_path(), 
-            "ChromeApis", "snippets", name)
+            ChromeApp.PACKAGE_NAME, "snippets", name)
         files = listfiles(dir_name)
         for file in files:
             view = self.window.new_file()
