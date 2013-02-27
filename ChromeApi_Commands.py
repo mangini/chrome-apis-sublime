@@ -35,6 +35,8 @@ class run_on_chrome(sublime_plugin.WindowCommand):
         # /Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary 
         #      --app-id=jligobnedlocadmblphlbchpgoahdagb --no-startup-window
 
+        # --no-startup-window
+        # subprocess.Popen(["/opt/chromium/src/canary/Debug/chrome", "--no-startup-window", "--load-and-launch-app=/usr/local/google/home/mangini/Developer/chrome-app-samples/hello-world-sync"])
 
 class create_crx(sublime_plugin.WindowCommand):
 
