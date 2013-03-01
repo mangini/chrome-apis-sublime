@@ -1099,140 +1099,144 @@ a(Vchrome.input.ime.onMenuItemActivated.addListener
 VonMenuItemActivated	Chrome input.ime
 Vchrome.input.ime.onMenuItemActivated.addListener(function( engineID, name ) {\u000a\u000a});
 tp276
+a(Vchrome.input.ime.onSurroundingTextChanged.addListener
+VonSurroundingTextChanged	Chrome input.ime
+Vchrome.input.ime.onSurroundingTextChanged.addListener(function( engineID, surroundingInfo ) {\u000a\u000a});
+tp277
 a(Vchrome.history.search
 Vsearch	Chrome history
 Vchrome.history.search(query, callback)
-tp277
+tp278
 a(Vchrome.history.getVisits
 VgetVisits	Chrome history
 Vchrome.history.getVisits(details, callback)
-tp278
+tp279
 a(Vchrome.history.addUrl
 VaddUrl	Chrome history
 Vchrome.history.addUrl(details, callback)
-tp279
+tp280
 a(Vchrome.history.deleteUrl
 VdeleteUrl	Chrome history
 Vchrome.history.deleteUrl(details, callback)
-tp280
+tp281
 a(Vchrome.history.deleteRange
 VdeleteRange	Chrome history
 Vchrome.history.deleteRange(range, callback)
-tp281
+tp282
 a(Vchrome.history.deleteAll
 VdeleteAll	Chrome history
 Vchrome.history.deleteAll(callback)
-tp282
+tp283
 a(Vchrome.history.onVisited.addListener
 VonVisited	Chrome history
 Vchrome.history.onVisited.addListener(function( result ) {\u000a\u000a});
-tp283
+tp284
 a(Vchrome.history.onVisitRemoved.addListener
 VonVisitRemoved	Chrome history
 Vchrome.history.onVisitRemoved.addListener(function( removed ) {\u000a\u000a});
-tp284
+tp285
 a(Vchrome.experimental.devtools.audits.addCategory
 VaddCategory	Chrome devtools.audits
 Vchrome.experimental.devtools.audits.addCategory(displayName, resultCount)
-tp285
+tp286
 a(Vchrome.pageAction.show
 Vshow	Chrome pageAction
 Vchrome.pageAction.show(tabId)
-tp286
+tp287
 a(Vchrome.pageAction.hide
 Vhide	Chrome pageAction
 Vchrome.pageAction.hide(tabId)
-tp287
+tp288
 a(Vchrome.pageAction.setTitle
 VsetTitle	Chrome pageAction
 Vchrome.pageAction.setTitle(details)
-tp288
+tp289
 a(Vchrome.pageAction.getTitle
 VgetTitle	Chrome pageAction
 Vchrome.pageAction.getTitle(details, callback)
-tp289
+tp290
 a(Vchrome.pageAction.setIcon
 VsetIcon	Chrome pageAction
 Vchrome.pageAction.setIcon(details, callback)
-tp290
+tp291
 a(Vchrome.pageAction.setPopup
 VsetPopup	Chrome pageAction
 Vchrome.pageAction.setPopup(details)
-tp291
+tp292
 a(Vchrome.pageAction.getPopup
 VgetPopup	Chrome pageAction
 Vchrome.pageAction.getPopup(details, callback)
-tp292
+tp293
 a(Vchrome.pageAction.onClicked.addListener
 VonClicked	Chrome pageAction
 Vchrome.pageAction.onClicked.addListener(function( tab ) {\u000a\u000a});
-tp293
+tp294
 a(Vchrome.devtools.panels.create
 Vcreate	Chrome devtools.panels
 Vchrome.devtools.panels.create(title, iconPath, pagePath, callback)
-tp294
+tp295
 a(Vchrome.devtools.panels.setOpenResourceHandler
 VsetOpenResourceHandler	Chrome devtools.panels
 Vchrome.devtools.panels.setOpenResourceHandler(callback)
-tp295
+tp296
 a(Vchrome.cookies.get
 Vget	Chrome cookies
 Vchrome.cookies.get(details, callback)
-tp296
+tp297
 a(Vchrome.cookies.getAll
 VgetAll	Chrome cookies
 Vchrome.cookies.getAll(details, callback)
-tp297
+tp298
 a(Vchrome.cookies.set
 Vset	Chrome cookies
 Vchrome.cookies.set(details, callback)
-tp298
+tp299
 a(Vchrome.cookies.remove
 Vremove	Chrome cookies
 Vchrome.cookies.remove(details, callback)
-tp299
+tp300
 a(Vchrome.cookies.getAllCookieStores
 VgetAllCookieStores	Chrome cookies
 Vchrome.cookies.getAllCookieStores(callback)
-tp300
+tp301
 a(Vchrome.cookies.onChanged.addListener
 VonChanged	Chrome cookies
 Vchrome.cookies.onChanged.addListener(function( changeInfo ) {\u000a\u000a});
-tp301
+tp302
 a(Vchrome.proxy.onProxyError.addListener
 VonProxyError	Chrome proxy
 Vchrome.proxy.onProxyError.addListener(function( details ) {\u000a\u000a});
-tp302
+tp303
 a(Vchrome.storage.onChanged.addListener
 VonChanged	Chrome storage
 Vchrome.storage.onChanged.addListener(function( changes, areaName ) {\u000a\u000a});
-tp303
+tp304
 a(Vchrome.pushMessaging.getChannelId
 VgetChannelId	Chrome pushMessaging
 Vchrome.pushMessaging.getChannelId(interactive, callback)
-tp304
+tp305
 a(Vchrome.pushMessaging.onMessage.addListener
 VonMessage	Chrome pushMessaging
 Vchrome.pushMessaging.onMessage.addListener(function( message ) {\u000a\u000a});
-tp305
+tp306
 a(Vchrome.debugger.attach
 Vattach	Chrome debugger
 Vchrome.debugger.attach(target, requiredVersion, callback)
-tp306
+tp307
 a(Vchrome.debugger.detach
 Vdetach	Chrome debugger
 Vchrome.debugger.detach(target, callback)
-tp307
+tp308
 a(Vchrome.debugger.sendCommand
 VsendCommand	Chrome debugger
 Vchrome.debugger.sendCommand(target, method, commandParams, callback)
-tp308
+tp309
 a(Vchrome.debugger.onEvent.addListener
 VonEvent	Chrome debugger
 Vchrome.debugger.onEvent.addListener(function( source, method, params ) {\u000a\u000a});
-tp309
+tp310
 a(Vchrome.debugger.onDetach.addListener
 VonDetach	Chrome debugger
 Vchrome.debugger.onDetach.addListener(function( source, reason ) {\u000a\u000a});
-tp310
+tp311
 a.
