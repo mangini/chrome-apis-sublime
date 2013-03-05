@@ -3,7 +3,6 @@ import os, re
 import ChromeApp
 
 def get_samplename_from_file(path):
-    print "HERE!"
     filename = os.path.basename(path);
     match = re.compile('^(.+)\.sublime-snippet$').match(filename)
     if not match:
@@ -35,10 +34,10 @@ class run_on_chrome(sublime_plugin.WindowCommand):
     def run(self):
         print ("running")
         # /Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary 
-        #      --app-id=jligobnedlocadmblphlbchpgoahdagb --no-startup-window
+        #      --app-id=$APPID --no-startup-window
 
         # --no-startup-window
-        # subprocess.Popen(["/opt/chromium/src/canary/Debug/chrome", "--no-startup-window", "--load-and-launch-app=/usr/local/google/home/mangini/Developer/chrome-app-samples/hello-world-sync"])
+        # subprocess.Popen(["chrome", "--no-startup-window", "--load-and-launch-app=$DIR/chrome-app-samples/hello-world-sync"])
 
 class create_crx(sublime_plugin.WindowCommand):
 
