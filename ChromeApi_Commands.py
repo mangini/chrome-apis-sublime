@@ -3,7 +3,9 @@ import os, re
 import ChromeApp
 
 def get_samplename_from_file(path):
-    match = re.compile(r"^.*\/([^\.\/]+)\.sublime-snippet$").match(path)
+    print "HERE!"
+    filename = os.path.basename(path);
+    match = re.compile('^(.+)\.sublime-snippet$').match(filename)
     if not match:
         raise Exception("Invalid sample file: %s" % path)
     return match.group(1).replace("_", ".")
