@@ -1,0 +1,4 @@
+[
+  { "keys": ["ctrl+shift+f1"], "command": "open_url", "args": {"url": "http://chrome-api.storage.googleapis.com/site/search.html"} }
+]
+
