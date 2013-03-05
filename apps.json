@@ -411,104 +411,132 @@ a(Vchrome.mediaGalleries.getMediaFileSystemMetadata
 VgetMediaFileSystemMetadata	Chrome mediaGalleries
 Vchrome.mediaGalleries.getMediaFileSystemMetadata(mediaFileSystem)
 tp104
+a(Vchrome.experimental.notification.create
+Vcreate	Chrome notification
+Vchrome.experimental.notification.create(notificationId, options, callback)
+tp105
+a(Vchrome.experimental.notification.update
+Vupdate	Chrome notification
+Vchrome.experimental.notification.update(notificationId, options, callback)
+tp106
+a(Vchrome.experimental.notification.clear
+Vclear	Chrome notification
+Vchrome.experimental.notification.clear(notificationId, callback)
+tp107
+a(Vchrome.experimental.notification.onDisplayed.addListener
+VonDisplayed	Chrome notification
+Vchrome.experimental.notification.onDisplayed.addListener(function( notificationId ) {\u000a\u000a});
+tp108
+a(Vchrome.experimental.notification.onClosed.addListener
+VonClosed	Chrome notification
+Vchrome.experimental.notification.onClosed.addListener(function( notificationId, byUser ) {\u000a\u000a});
+tp109
+a(Vchrome.experimental.notification.onClicked.addListener
+VonClicked	Chrome notification
+Vchrome.experimental.notification.onClicked.addListener(function( notificationId ) {\u000a\u000a});
+tp110
+a(Vchrome.experimental.notification.onButtonClicked.addListener
+VonButtonClicked	Chrome notification
+Vchrome.experimental.notification.onButtonClicked.addListener(function( notificationId, buttonIndex ) {\u000a\u000a});
+tp111
 a(Vchrome.socket.create
 Vcreate	Chrome socket
 Vchrome.socket.create(type, options, callback)
-tp105
+tp112
 a(Vchrome.socket.destroy
 Vdestroy	Chrome socket
 Vchrome.socket.destroy(socketId)
-tp106
+tp113
 a(Vchrome.socket.connect
 Vconnect	Chrome socket
 Vchrome.socket.connect(socketId, hostname, port, callback)
-tp107
+tp114
 a(Vchrome.socket.bind
 Vbind	Chrome socket
 Vchrome.socket.bind(socketId, address, port, callback)
-tp108
+tp115
 a(Vchrome.socket.disconnect
 Vdisconnect	Chrome socket
 Vchrome.socket.disconnect(socketId)
-tp109
+tp116
 a(Vchrome.socket.read
 Vread	Chrome socket
 Vchrome.socket.read(socketId, bufferSize, callback)
-tp110
+tp117
 a(Vchrome.socket.write
 Vwrite	Chrome socket
 Vchrome.socket.write(socketId, data, callback)
-tp111
+tp118
 a(Vchrome.socket.recvFrom
 VrecvFrom	Chrome socket
 Vchrome.socket.recvFrom(socketId, bufferSize, callback)
-tp112
+tp119
 a(Vchrome.socket.sendTo
 VsendTo	Chrome socket
 Vchrome.socket.sendTo(socketId, data, address, port, callback)
-tp113
+tp120
 a(Vchrome.socket.listen
 Vlisten	Chrome socket
 Vchrome.socket.listen(socketId, address, port, backlog, callback)
-tp114
+tp121
 a(Vchrome.socket.accept
 Vaccept	Chrome socket
 Vchrome.socket.accept(socketId, callback)
-tp115
+tp122
 a(Vchrome.socket.setKeepAlive
 VsetKeepAlive	Chrome socket
 Vchrome.socket.setKeepAlive(socketId, enable, delay, callback)
-tp116
+tp123
 a(Vchrome.socket.setNoDelay
 VsetNoDelay	Chrome socket
 Vchrome.socket.setNoDelay(socketId, noDelay, callback)
-tp117
+tp124
 a(Vchrome.socket.getInfo
 VgetInfo	Chrome socket
 Vchrome.socket.getInfo(socketId, callback)
-tp118
+tp125
 a(Vchrome.socket.getNetworkList
 VgetNetworkList	Chrome socket
 Vchrome.socket.getNetworkList(callback)
-tp119
+tp126
 a(Vchrome.syncFileSystem.requestFileSystem
 VrequestFileSystem	Chrome syncFileSystem
 Vchrome.syncFileSystem.requestFileSystem(callback)
-tp120
+tp127
 a(Vchrome.syncFileSystem.getUsageAndQuota
 VgetUsageAndQuota	Chrome syncFileSystem
 Vchrome.syncFileSystem.getUsageAndQuota(fileSystem, callback)
-tp121
+tp128
 a(Vchrome.syncFileSystem.deleteFileSystem
 VdeleteFileSystem	Chrome syncFileSystem
 Vchrome.syncFileSystem.deleteFileSystem(fileSystem, callback)
-tp122
+tp129
 a(Vchrome.syncFileSystem.getFileStatus
 VgetFileStatus	Chrome syncFileSystem
 Vchrome.syncFileSystem.getFileStatus(fileEntry, callback)
-tp123
+tp130
 a(Vchrome.syncFileSystem.onServiceStatusChanged.addListener
 VonServiceStatusChanged	Chrome syncFileSystem
 Vchrome.syncFileSystem.onServiceStatusChanged.addListener(function( detail ) {\u000a\u000a});
-tp124
+tp131
 a(Vchrome.syncFileSystem.onFileStatusChanged.addListener
 VonFileStatusChanged	Chrome syncFileSystem
 Vchrome.syncFileSystem.onFileStatusChanged.addListener(function( detail ) {\u000a\u000a});
-tp125
+tp132
 a(Vchrome.storage.onChanged.addListener
 VonChanged	Chrome storage
 Vchrome.storage.onChanged.addListener(function( changes, areaName ) {\u000a\u000a});
-tp126
+tp133
 a(Vchrome.experimental.systemInfo.memory.get
 Vget	Chrome systemInfo.memory
 Vchrome.experimental.systemInfo.memory.get(callback)
-tp127
+tp134
 a(Vchrome.pushMessaging.getChannelId
 VgetChannelId	Chrome pushMessaging
 Vchrome.pushMessaging.getChannelId(interactive, callback)
-tp128
+tp135
 a(Vchrome.pushMessaging.onMessage.addListener
 VonMessage	Chrome pushMessaging
 Vchrome.pushMessaging.onMessage.addListener(function( message ) {\u000a\u000a});
-tp129
+tp136
 a.
