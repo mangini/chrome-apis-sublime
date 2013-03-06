@@ -4,7 +4,7 @@ import re
 import os
 import ChromeApp
 
-CSP_VIOLATIONS_SYNTAX = "cspvalidator/CSPViolations.hidden.tmLanguage"
+CSP_VIOLATIONS_SYNTAX = "cspvalidator%sCSPViolations.hidden.tmLanguage" % os.sep
 CSP_VIOLATIONS_NAME = "Violations of CSP rules"
 
 class CSPRule():
@@ -179,8 +179,8 @@ class csp_validate_files(sublime_plugin.ApplicationCommand):
         errorView.insert(edit, 0, text)
 
         errorView.end_edit(edit)
-        errorView.set_syntax_file("%s/%s/%s" % 
-            (sublime.packages_path(), ChromeApp.PACKAGE_NAME, CSP_VIOLATIONS_SYNTAX))
+        errorView.set_syntax_file("%s%s%s%s%s" % 
+            (sublime.packages_path(), os.sep, ChromeApp.PACKAGE_NAME, os.sep, CSP_VIOLATIONS_SYNTAX))
 
     def csp_rule_clicked(self, index):
         if index<0:

@@ -14,7 +14,7 @@ def debug(obj):
 # search parent dirs for manifest:
 def findProjectRoot(baseDir):
 	while True:
-		manifestName= baseDir + "/manifest.json"
+		manifestName= "%s%smanifest.json" % ( baseDir, os.sep )
 		if os.path.isfile(manifestName):
 			return baseDir
 			
@@ -34,10 +34,10 @@ class ChromeApp(sublime_plugin.EventListener):
 		debug("initiating EventListener!")
 		self.activeInViews={}
 		self.manifestForOpenViews={}
-		self.appsCompletions=cPickle.load(open("%s/%s/apps.json" % 
-			(sublime.packages_path(), PACKAGE_NAME), 'r'))
-		self.extensionsCompletions=cPickle.load(open("%s/%s/extensions.json" % 
-			(sublime.packages_path(), PACKAGE_NAME), 'r'))
+		self.appsCompletions=cPickle.load(open("%s%s%s%sapps.json" % 
+			(sublime.packages_path(), os.sep, PACKAGE_NAME, os.sep), 'r'))
+		self.extensionsCompletions=cPickle.load(open("%s%s%s%sextensions.json" % 
+			(sublime.packages_path(), os.sep, PACKAGE_NAME, os.sep), 'r'))
 		#debug(self.appsCompletions)
 
 	def activateForView(self, view, manifestName, appType):
@@ -67,7 +67,7 @@ class ChromeApp(sublime_plugin.EventListener):
 		if view.file_name().endswith(".js"):
 			parentDir = findProjectRoot(view.file_name())
 			if (parentDir != None):
-				manifestName= parentDir + "/manifest.json"
+				manifestName= "%s%smanifest.json" % (parentDir, os.sep)
 				looksLike = self.processManifest(manifestName)
 				if looksLike != MANIFEST_LOOKSLIKE_NOTHING:
 					self.activateForView(view, manifestName, looksLike)
