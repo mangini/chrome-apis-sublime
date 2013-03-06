@@ -34,7 +34,7 @@
             { "caption": "-"},
             { "caption": "Docs and samples",
                 "children": [
-                  { "command": "open_url", "args": {"url": "http://chrome-api.storage.googleapis.com/site/search.html"}, "caption": "Search the APIs" },
+                  { "command": "open_url", "args": {"url": "http://chrome-api.storage.googleapis.com/site/search.html?utm_source=sublimeplugin&utm_medium=shortcut&utm_campaign=shortcut"}, "caption": "Search the APIs" },
                   { "caption": "-"},
                   { "command": "open_url", "args": {"url": "https://github.com/GoogleChrome/chrome-app-samples"}, "caption": "Samples - Apps" },
                   { "command": "open_url", "args": {"url": "http://developer.chrome.com/apps/about_apps.html"}, "caption": "Documentation - Apps" },
