@@ -26,7 +26,14 @@ class new_chrome(sublime_plugin.WindowCommand):
         for file in files:
             view = self.window.new_file()
             view.set_name(get_samplename_from_file(file))
-            simple_file=re.sub(".*%s(Packages%s.*)" % (os.sep, os.sep), r"\1", file)
+            if os.sep == "\\":
+                # this is required because, despite Windows using backslash,
+                # Sublime requires the "name" param of insert_snippet to
+                # use forward slash.
+                simple_file=re.sub(r".*\\(Packages\\.*)", r"\1", file)
+                simple_file=re.sub(r"\\", r"/", simple_file)
+            else:
+                simple_file=re.sub(r".*\/(Packages\/.*)", r"\1", file)
             view.run_command("insert_snippet", {"name": simple_file})
 
 class run_on_chrome(sublime_plugin.WindowCommand):
