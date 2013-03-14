@@ -507,40 +507,48 @@ a(Vchrome.syncFileSystem.requestFileSystem
 VrequestFileSystem	Chrome syncFileSystem
 Vchrome.syncFileSystem.requestFileSystem(callback)
 tp128
+a(Vchrome.syncFileSystem.setConflictResolutionPolicy
+VsetConflictResolutionPolicy	Chrome syncFileSystem
+Vchrome.syncFileSystem.setConflictResolutionPolicy(policy, callback)
+tp129
+a(Vchrome.syncFileSystem.getConflictResolutionPolicy
+VgetConflictResolutionPolicy	Chrome syncFileSystem
+Vchrome.syncFileSystem.getConflictResolutionPolicy(callback)
+tp130
 a(Vchrome.syncFileSystem.getUsageAndQuota
 VgetUsageAndQuota	Chrome syncFileSystem
 Vchrome.syncFileSystem.getUsageAndQuota(fileSystem, callback)
-tp129
+tp131
 a(Vchrome.syncFileSystem.deleteFileSystem
 VdeleteFileSystem	Chrome syncFileSystem
 Vchrome.syncFileSystem.deleteFileSystem(fileSystem, callback)
-tp130
+tp132
 a(Vchrome.syncFileSystem.getFileStatus
 VgetFileStatus	Chrome syncFileSystem
 Vchrome.syncFileSystem.getFileStatus(fileEntry, callback)
-tp131
+tp133
 a(Vchrome.syncFileSystem.onServiceStatusChanged.addListener
 VonServiceStatusChanged	Chrome syncFileSystem
 Vchrome.syncFileSystem.onServiceStatusChanged.addListener(function( detail ) {\u000a\u000a});
-tp132
+tp134
 a(Vchrome.syncFileSystem.onFileStatusChanged.addListener
 VonFileStatusChanged	Chrome syncFileSystem
 Vchrome.syncFileSystem.onFileStatusChanged.addListener(function( detail ) {\u000a\u000a});
-tp133
+tp135
 a(Vchrome.storage.onChanged.addListener
 VonChanged	Chrome storage
 Vchrome.storage.onChanged.addListener(function( changes, areaName ) {\u000a\u000a});
-tp134
+tp136
 a(Vchrome.experimental.systemInfo.memory.get
 Vget	Chrome systemInfo.memory
 Vchrome.experimental.systemInfo.memory.get(callback)
-tp135
+tp137
 a(Vchrome.pushMessaging.getChannelId
 VgetChannelId	Chrome pushMessaging
 Vchrome.pushMessaging.getChannelId(interactive, callback)
-tp136
+tp138
 a(Vchrome.pushMessaging.onMessage.addListener
 VonMessage	Chrome pushMessaging
 Vchrome.pushMessaging.onMessage.addListener(function( message ) {\u000a\u000a});
-tp137
+tp139
 a.
