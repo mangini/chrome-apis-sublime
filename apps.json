@@ -527,36 +527,32 @@ a(Vchrome.syncFileSystem.getUsageAndQuota
 VgetUsageAndQuota	Chrome syncFileSystem
 Vchrome.syncFileSystem.getUsageAndQuota(fileSystem, callback)
 tp133
-a(Vchrome.syncFileSystem.deleteFileSystem
-VdeleteFileSystem	Chrome syncFileSystem
-Vchrome.syncFileSystem.deleteFileSystem(fileSystem, callback)
-tp134
 a(Vchrome.syncFileSystem.getFileStatus
 VgetFileStatus	Chrome syncFileSystem
 Vchrome.syncFileSystem.getFileStatus(fileEntry, callback)
-tp135
+tp134
 a(Vchrome.syncFileSystem.onServiceStatusChanged.addListener
 VonServiceStatusChanged	Chrome syncFileSystem
 Vchrome.syncFileSystem.onServiceStatusChanged.addListener(function( detail ) {\u000a\u000a});
-tp136
+tp135
 a(Vchrome.syncFileSystem.onFileStatusChanged.addListener
 VonFileStatusChanged	Chrome syncFileSystem
 Vchrome.syncFileSystem.onFileStatusChanged.addListener(function( detail ) {\u000a\u000a});
-tp137
+tp136
 a(Vchrome.storage.onChanged.addListener
 VonChanged	Chrome storage
 Vchrome.storage.onChanged.addListener(function( changes, areaName ) {\u000a\u000a});
-tp138
+tp137
 a(Vchrome.experimental.systemInfo.memory.get
 Vget	Chrome systemInfo.memory
 Vchrome.experimental.systemInfo.memory.get(callback)
-tp139
+tp138
 a(Vchrome.pushMessaging.getChannelId
 VgetChannelId	Chrome pushMessaging
 Vchrome.pushMessaging.getChannelId(interactive, callback)
-tp140
+tp139
 a(Vchrome.pushMessaging.onMessage.addListener
 VonMessage	Chrome pushMessaging
 Vchrome.pushMessaging.onMessage.addListener(function( message ) {\u000a\u000a});
-tp141
+tp140
 a.
