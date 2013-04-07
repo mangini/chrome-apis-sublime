@@ -1251,12 +1251,16 @@ a(Vchrome.debugger.sendCommand
 VsendCommand	Chrome debugger
 Vchrome.debugger.sendCommand(target, method, commandParams, callback)
 tp314
+a(Vchrome.debugger.getTargets
+VgetTargets	Chrome debugger
+Vchrome.debugger.getTargets(callback)
+tp315
 a(Vchrome.debugger.onEvent.addListener
 VonEvent	Chrome debugger
 Vchrome.debugger.onEvent.addListener(function( source, method, params ) {\u000a\u000a});
-tp315
+tp316
 a(Vchrome.debugger.onDetach.addListener
 VonDetach	Chrome debugger
 Vchrome.debugger.onDetach.addListener(function( source, reason ) {\u000a\u000a});
-tp316
+tp317
 a.
