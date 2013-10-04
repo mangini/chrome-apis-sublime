@@ -375,165 +375,165 @@ a(Vchrome.runtime.onRestartRequired.addListener
 VonRestartRequired	Chrome runtime
 Vchrome.runtime.onRestartRequired.addListener(function(  ) {\u000a\u000a});
 tp95
-a(Vchrome.system.memory.getInfo
-VgetInfo	Chrome system.memory
-Vchrome.system.memory.getInfo(callback)
-tp96
 a(Vchrome.location.watchLocation
 VwatchLocation	Chrome location
 Vchrome.location.watchLocation(name, requestInfo)
-tp97
+tp96
 a(Vchrome.location.clearWatch
 VclearWatch	Chrome location
 Vchrome.location.clearWatch(name)
-tp98
+tp97
 a(Vchrome.location.onLocationUpdate.addListener
 VonLocationUpdate	Chrome location
 Vchrome.location.onLocationUpdate.addListener(function(  ) {\u000a\u000a});
-tp99
+tp98
 a(Vchrome.location.onLocationError.addListener
 VonLocationError	Chrome location
 Vchrome.location.onLocationError.addListener(function(  ) {\u000a\u000a});
-tp100
+tp99
 a(Vchrome.bluetooth.addProfile
 VaddProfile	Chrome bluetooth
 Vchrome.bluetooth.addProfile(profile, callback)
-tp101
+tp100
 a(Vchrome.bluetooth.removeProfile
 VremoveProfile	Chrome bluetooth
 Vchrome.bluetooth.removeProfile(profile, callback)
-tp102
+tp101
 a(Vchrome.bluetooth.getAdapterState
 VgetAdapterState	Chrome bluetooth
 Vchrome.bluetooth.getAdapterState(callback)
-tp103
+tp102
 a(Vchrome.bluetooth.getDevices
 VgetDevices	Chrome bluetooth
 Vchrome.bluetooth.getDevices(options, callback)
-tp104
+tp103
 a(Vchrome.bluetooth.getProfiles
 VgetProfiles	Chrome bluetooth
 Vchrome.bluetooth.getProfiles(options, callback)
-tp105
+tp104
 a(Vchrome.bluetooth.getServices
 VgetServices	Chrome bluetooth
 Vchrome.bluetooth.getServices(options, callback)
-tp106
+tp105
 a(Vchrome.bluetooth.connect
 Vconnect	Chrome bluetooth
 Vchrome.bluetooth.connect(options, callback)
-tp107
+tp106
 a(Vchrome.bluetooth.disconnect
 Vdisconnect	Chrome bluetooth
 Vchrome.bluetooth.disconnect(options, callback)
-tp108
+tp107
 a(Vchrome.bluetooth.read
 Vread	Chrome bluetooth
 Vchrome.bluetooth.read(options, callback)
-tp109
+tp108
 a(Vchrome.bluetooth.write
 Vwrite	Chrome bluetooth
 Vchrome.bluetooth.write(options, callback)
-tp110
+tp109
 a(Vchrome.bluetooth.getLocalOutOfBandPairingData
 VgetLocalOutOfBandPairingData	Chrome bluetooth
 Vchrome.bluetooth.getLocalOutOfBandPairingData(callback)
-tp111
+tp110
 a(Vchrome.bluetooth.setOutOfBandPairingData
 VsetOutOfBandPairingData	Chrome bluetooth
 Vchrome.bluetooth.setOutOfBandPairingData(options, callback)
-tp112
+tp111
 a(Vchrome.bluetooth.startDiscovery
 VstartDiscovery	Chrome bluetooth
 Vchrome.bluetooth.startDiscovery(options, callback)
-tp113
+tp112
 a(Vchrome.bluetooth.stopDiscovery
 VstopDiscovery	Chrome bluetooth
 Vchrome.bluetooth.stopDiscovery(callback)
-tp114
+tp113
 a(Vchrome.bluetooth.onAdapterStateChanged.addListener
 VonAdapterStateChanged	Chrome bluetooth
 Vchrome.bluetooth.onAdapterStateChanged.addListener(function(  ) {\u000a\u000a});
-tp115
+tp114
 a(Vchrome.bluetooth.onConnection.addListener
 VonConnection	Chrome bluetooth
 Vchrome.bluetooth.onConnection.addListener(function(  ) {\u000a\u000a});
-tp116
+tp115
 a(Vchrome.tts.speak
 Vspeak	Chrome tts
 Vchrome.tts.speak(utterance, options, callback)
-tp117
+tp116
 a(Vchrome.tts.stop
 Vstop	Chrome tts
 Vchrome.tts.stop()
-tp118
+tp117
 a(Vchrome.tts.pause
 Vpause	Chrome tts
 Vchrome.tts.pause()
-tp119
+tp118
 a(Vchrome.tts.resume
 Vresume	Chrome tts
 Vchrome.tts.resume()
-tp120
+tp119
 a(Vchrome.tts.isSpeaking
 VisSpeaking	Chrome tts
 Vchrome.tts.isSpeaking(callback)
-tp121
+tp120
 a(Vchrome.tts.getVoices
 VgetVoices	Chrome tts
 Vchrome.tts.getVoices(callback)
-tp122
+tp121
 a(Vchrome.permissions.getAll
 VgetAll	Chrome permissions
 Vchrome.permissions.getAll(callback)
-tp123
+tp122
 a(Vchrome.permissions.contains
 Vcontains	Chrome permissions
 Vchrome.permissions.contains(permissions, callback)
-tp124
+tp123
 a(Vchrome.permissions.request
 Vrequest	Chrome permissions
 Vchrome.permissions.request(permissions, callback)
-tp125
+tp124
 a(Vchrome.permissions.remove
 Vremove	Chrome permissions
 Vchrome.permissions.remove(permissions, callback)
-tp126
+tp125
 a(Vchrome.permissions.onAdded.addListener
 VonAdded	Chrome permissions
 Vchrome.permissions.onAdded.addListener(function(  ) {\u000a\u000a});
-tp127
+tp126
 a(Vchrome.permissions.onRemoved.addListener
 VonRemoved	Chrome permissions
 Vchrome.permissions.onRemoved.addListener(function(  ) {\u000a\u000a});
-tp128
+tp127
 a(Vchrome.system.display.getInfo
 VgetInfo	Chrome system.display
 Vchrome.system.display.getInfo(callback)
-tp129
+tp128
 a(Vchrome.system.display.setDisplayProperties
 VsetDisplayProperties	Chrome system.display
 Vchrome.system.display.setDisplayProperties(id, info, callback)
-tp130
+tp129
 a(Vchrome.system.display.onDisplayChanged.addListener
 VonDisplayChanged	Chrome system.display
 Vchrome.system.display.onDisplayChanged.addListener(function(  ) {\u000a\u000a});
-tp131
+tp130
 a(Vchrome.mediaGalleries.getMediaFileSystems
 VgetMediaFileSystems	Chrome mediaGalleries
 Vchrome.mediaGalleries.getMediaFileSystems(details, callback)
-tp132
+tp131
 a(Vchrome.mediaGalleries.getMediaFileSystemMetadata
 VgetMediaFileSystemMetadata	Chrome mediaGalleries
 Vchrome.mediaGalleries.getMediaFileSystemMetadata(mediaFileSystem)
-tp133
+tp132
 a(Vchrome.power.requestKeepAwake
 VrequestKeepAwake	Chrome power
 Vchrome.power.requestKeepAwake(level)
-tp134
+tp133
 a(Vchrome.power.releaseKeepAwake
 VreleaseKeepAwake	Chrome power
 Vchrome.power.releaseKeepAwake()
+tp134
+a(Vchrome.system.memory.getInfo
+VgetInfo	Chrome system.memory
+Vchrome.system.memory.getInfo(callback)
 tp135
 a(Vchrome.socket.create
 Vcreate	Chrome socket
