@@ -325,7 +325,7 @@ Vchrome.runtime.connectNative(application)
 tp82
 a(Vchrome.runtime.sendMessage
 VsendMessage	Chrome runtime
-Vchrome.runtime.sendMessage(extensionId, message, responseCallback)
+Vchrome.runtime.sendMessage(extensionId, message, options, responseCallback)
 tp83
 a(Vchrome.runtime.sendNativeMessage
 VsendNativeMessage	Chrome runtime

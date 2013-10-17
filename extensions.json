@@ -217,7 +217,7 @@ Vchrome.alarms.onAlarm.addListener(function(  ) {\u000a\u000a});
 tp55
 a(Vchrome.desktopCapture.chooseDesktopMedia
 VchooseDesktopMedia	Chrome desktopCapture
-Vchrome.desktopCapture.chooseDesktopMedia(sources, origin, callback)
+Vchrome.desktopCapture.chooseDesktopMedia(sources, targetTab, callback)
 tp56
 a(Vchrome.desktopCapture.cancelChooseDesktopMedia
 VcancelChooseDesktopMedia	Chrome desktopCapture
@@ -377,7 +377,7 @@ Vchrome.runtime.connectNative(application)
 tp95
 a(Vchrome.runtime.sendMessage
 VsendMessage	Chrome runtime
-Vchrome.runtime.sendMessage(extensionId, message, responseCallback)
+Vchrome.runtime.sendMessage(extensionId, message, options, responseCallback)
 tp96
 a(Vchrome.runtime.sendNativeMessage
 VsendNativeMessage	Chrome runtime
