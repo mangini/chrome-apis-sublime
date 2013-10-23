@@ -91,604 +91,612 @@ a(Vchrome.notifications.getAll
 VgetAll	Chrome notifications
 Vchrome.notifications.getAll(callback)
 tp24
+a(Vchrome.notifications.getPermissionLevel
+VgetPermissionLevel	Chrome notifications
+Vchrome.notifications.getPermissionLevel(callback)
+tp25
 a(Vchrome.notifications.onClosed.addListener
 VonClosed	Chrome notifications
 Vchrome.notifications.onClosed.addListener(function(  ) {\u000a\u000a});
-tp25
+tp26
 a(Vchrome.notifications.onClicked.addListener
 VonClicked	Chrome notifications
 Vchrome.notifications.onClicked.addListener(function(  ) {\u000a\u000a});
-tp26
+tp27
 a(Vchrome.notifications.onButtonClicked.addListener
 VonButtonClicked	Chrome notifications
 Vchrome.notifications.onButtonClicked.addListener(function(  ) {\u000a\u000a});
-tp27
+tp28
+a(Vchrome.notifications.onPermissionLevelChanged.addListener
+VonPermissionLevelChanged	Chrome notifications
+Vchrome.notifications.onPermissionLevelChanged.addListener(function(  ) {\u000a\u000a});
+tp29
 a(Vchrome.system.cpu.getInfo
 VgetInfo	Chrome system.cpu
 Vchrome.system.cpu.getInfo(callback)
-tp28
+tp30
 a(Vchrome.app.window.create
 Vcreate	Chrome app.window
 Vchrome.app.window.create(url, options, callback)
-tp29
+tp31
 a(Vchrome.app.window.current
 Vcurrent	Chrome app.window
 Vchrome.app.window.current()
-tp30
+tp32
 a(Vchrome.app.window.onBoundsChanged.addListener
 VonBoundsChanged	Chrome app.window
 Vchrome.app.window.onBoundsChanged.addListener(function(  ) {\u000a\u000a});
-tp31
+tp33
 a(Vchrome.app.window.onClosed.addListener
 VonClosed	Chrome app.window
 Vchrome.app.window.onClosed.addListener(function(  ) {\u000a\u000a});
-tp32
+tp34
 a(Vchrome.app.window.onFullscreened.addListener
 VonFullscreened	Chrome app.window
 Vchrome.app.window.onFullscreened.addListener(function(  ) {\u000a\u000a});
-tp33
+tp35
 a(Vchrome.app.window.onMaximized.addListener
 VonMaximized	Chrome app.window
 Vchrome.app.window.onMaximized.addListener(function(  ) {\u000a\u000a});
-tp34
+tp36
 a(Vchrome.app.window.onMinimized.addListener
 VonMinimized	Chrome app.window
 Vchrome.app.window.onMinimized.addListener(function(  ) {\u000a\u000a});
-tp35
+tp37
 a(Vchrome.app.window.onRestored.addListener
 VonRestored	Chrome app.window
 Vchrome.app.window.onRestored.addListener(function(  ) {\u000a\u000a});
-tp36
+tp38
 a(Vchrome.alarms.create
 Vcreate	Chrome alarms
 Vchrome.alarms.create(name, alarmInfo)
-tp37
+tp39
 a(Vchrome.alarms.get
 Vget	Chrome alarms
 Vchrome.alarms.get(name, callback)
-tp38
+tp40
 a(Vchrome.alarms.getAll
 VgetAll	Chrome alarms
 Vchrome.alarms.getAll(callback)
-tp39
+tp41
 a(Vchrome.alarms.clear
 Vclear	Chrome alarms
 Vchrome.alarms.clear(name)
-tp40
+tp42
 a(Vchrome.alarms.clearAll
 VclearAll	Chrome alarms
 Vchrome.alarms.clearAll()
-tp41
+tp43
 a(Vchrome.alarms.onAlarm.addListener
 VonAlarm	Chrome alarms
 Vchrome.alarms.onAlarm.addListener(function(  ) {\u000a\u000a});
-tp42
+tp44
 a(Vchrome.fileSystem.getDisplayPath
 VgetDisplayPath	Chrome fileSystem
 Vchrome.fileSystem.getDisplayPath(entry, callback)
-tp43
+tp45
 a(Vchrome.fileSystem.getWritableEntry
 VgetWritableEntry	Chrome fileSystem
 Vchrome.fileSystem.getWritableEntry(entry, callback)
-tp44
+tp46
 a(Vchrome.fileSystem.isWritableEntry
 VisWritableEntry	Chrome fileSystem
 Vchrome.fileSystem.isWritableEntry(entry, callback)
-tp45
+tp47
 a(Vchrome.fileSystem.chooseEntry
 VchooseEntry	Chrome fileSystem
 Vchrome.fileSystem.chooseEntry(options, callback)
-tp46
+tp48
 a(Vchrome.fileSystem.restoreEntry
 VrestoreEntry	Chrome fileSystem
 Vchrome.fileSystem.restoreEntry(id, callback)
-tp47
+tp49
 a(Vchrome.fileSystem.isRestorable
 VisRestorable	Chrome fileSystem
 Vchrome.fileSystem.isRestorable(id, callback)
-tp48
+tp50
 a(Vchrome.fileSystem.retainEntry
 VretainEntry	Chrome fileSystem
 Vchrome.fileSystem.retainEntry(entry)
-tp49
+tp51
 a(Vchrome.serial.getPorts
 VgetPorts	Chrome serial
 Vchrome.serial.getPorts(callback)
-tp50
+tp52
 a(Vchrome.serial.open
 Vopen	Chrome serial
 Vchrome.serial.open(port, options, callback)
-tp51
+tp53
 a(Vchrome.serial.close
 Vclose	Chrome serial
 Vchrome.serial.close(connectionId, callback)
-tp52
+tp54
 a(Vchrome.serial.read
 Vread	Chrome serial
 Vchrome.serial.read(connectionId, bytesToRead, callback)
-tp53
+tp55
 a(Vchrome.serial.write
 Vwrite	Chrome serial
 Vchrome.serial.write(connectionId, data, callback)
-tp54
+tp56
 a(Vchrome.serial.flush
 Vflush	Chrome serial
 Vchrome.serial.flush(connectionId, callback)
-tp55
+tp57
 a(Vchrome.serial.getControlSignals
 VgetControlSignals	Chrome serial
 Vchrome.serial.getControlSignals(connectionId, callback)
-tp56
+tp58
 a(Vchrome.serial.setControlSignals
 VsetControlSignals	Chrome serial
 Vchrome.serial.setControlSignals(connectionId, options, callback)
-tp57
+tp59
 a(Vchrome.experimental.identity.getAuthToken
 VgetAuthToken	Chrome identity
 Vchrome.experimental.identity.getAuthToken(details, callback)
-tp58
+tp60
 a(Vchrome.experimental.identity.launchWebAuthFlow
 VlaunchWebAuthFlow	Chrome identity
 Vchrome.experimental.identity.launchWebAuthFlow(details, callback)
-tp59
+tp61
 a(Vchrome.i18n.getAcceptLanguages
 VgetAcceptLanguages	Chrome i18n
 Vchrome.i18n.getAcceptLanguages(callback)
-tp60
+tp62
 a(Vchrome.i18n.getMessage
 VgetMessage	Chrome i18n
 Vchrome.i18n.getMessage(messageName, substitutions)
-tp61
+tp63
 a(Vchrome.app.runtime.onLaunched.addListener
 VonLaunched	Chrome app.runtime
 Vchrome.app.runtime.onLaunched.addListener(function(  ) {\u000a\u000a});
-tp62
+tp64
 a(Vchrome.app.runtime.onRestarted.addListener
 VonRestarted	Chrome app.runtime
 Vchrome.app.runtime.onRestarted.addListener(function(  ) {\u000a\u000a});
-tp63
+tp65
 a(Vchrome.idle.queryState
 VqueryState	Chrome idle
 Vchrome.idle.queryState(detectionIntervalInSeconds, callback)
-tp64
+tp66
 a(Vchrome.idle.setDetectionInterval
 VsetDetectionInterval	Chrome idle
 Vchrome.idle.setDetectionInterval(intervalInSeconds)
-tp65
+tp67
 a(Vchrome.idle.onStateChanged.addListener
 VonStateChanged	Chrome idle
 Vchrome.idle.onStateChanged.addListener(function(  ) {\u000a\u000a});
-tp66
+tp68
 a(Vchrome.system.storage.getInfo
 VgetInfo	Chrome system.storage
 Vchrome.system.storage.getInfo(callback)
-tp67
+tp69
 a(Vchrome.system.storage.ejectDevice
 VejectDevice	Chrome system.storage
 Vchrome.system.storage.ejectDevice(id, callback)
-tp68
+tp70
 a(Vchrome.system.storage.getAvailableCapacity
 VgetAvailableCapacity	Chrome system.storage
 Vchrome.system.storage.getAvailableCapacity(id, callback)
-tp69
+tp71
 a(Vchrome.system.storage.onAttached.addListener
 VonAttached	Chrome system.storage
 Vchrome.system.storage.onAttached.addListener(function(  ) {\u000a\u000a});
-tp70
+tp72
 a(Vchrome.system.storage.onDetached.addListener
 VonDetached	Chrome system.storage
 Vchrome.system.storage.onDetached.addListener(function(  ) {\u000a\u000a});
-tp71
+tp73
 a(Vchrome.identity.getAuthToken
 VgetAuthToken	Chrome identity
 Vchrome.identity.getAuthToken(details, callback)
-tp72
+tp74
 a(Vchrome.identity.removeCachedAuthToken
 VremoveCachedAuthToken	Chrome identity
 Vchrome.identity.removeCachedAuthToken(details, callback)
-tp73
+tp75
 a(Vchrome.identity.launchWebAuthFlow
 VlaunchWebAuthFlow	Chrome identity
 Vchrome.identity.launchWebAuthFlow(details, callback)
-tp74
+tp76
 a(Vchrome.identity.onSignInChanged.addListener
 VonSignInChanged	Chrome identity
 Vchrome.identity.onSignInChanged.addListener(function(  ) {\u000a\u000a});
-tp75
+tp77
 a(Vchrome.runtime.getBackgroundPage
 VgetBackgroundPage	Chrome runtime
 Vchrome.runtime.getBackgroundPage(callback)
-tp76
+tp78
 a(Vchrome.runtime.getManifest
 VgetManifest	Chrome runtime
 Vchrome.runtime.getManifest()
-tp77
+tp79
 a(Vchrome.runtime.getURL
 VgetURL	Chrome runtime
 Vchrome.runtime.getURL(path)
-tp78
+tp80
 a(Vchrome.runtime.setUninstallUrl
 VsetUninstallUrl	Chrome runtime
 Vchrome.runtime.setUninstallUrl(url)
-tp79
+tp81
 a(Vchrome.runtime.reload
 Vreload	Chrome runtime
 Vchrome.runtime.reload()
-tp80
+tp82
 a(Vchrome.runtime.requestUpdateCheck
 VrequestUpdateCheck	Chrome runtime
 Vchrome.runtime.requestUpdateCheck(callback)
-tp81
+tp83
 a(Vchrome.runtime.restart
 Vrestart	Chrome runtime
 Vchrome.runtime.restart()
-tp82
+tp84
 a(Vchrome.runtime.connect
 Vconnect	Chrome runtime
 Vchrome.runtime.connect(extensionId, connectInfo)
-tp83
+tp85
 a(Vchrome.runtime.connectNative
 VconnectNative	Chrome runtime
 Vchrome.runtime.connectNative(application)
-tp84
+tp86
 a(Vchrome.runtime.sendMessage
 VsendMessage	Chrome runtime
 Vchrome.runtime.sendMessage(extensionId, message, options, responseCallback)
-tp85
+tp87
 a(Vchrome.runtime.sendNativeMessage
 VsendNativeMessage	Chrome runtime
 Vchrome.runtime.sendNativeMessage(application, message, responseCallback)
-tp86
+tp88
 a(Vchrome.runtime.getPlatformInfo
 VgetPlatformInfo	Chrome runtime
 Vchrome.runtime.getPlatformInfo(callback)
-tp87
+tp89
 a(Vchrome.runtime.getPackageDirectoryEntry
 VgetPackageDirectoryEntry	Chrome runtime
 Vchrome.runtime.getPackageDirectoryEntry(callback)
-tp88
+tp90
 a(Vchrome.runtime.onStartup.addListener
 VonStartup	Chrome runtime
 Vchrome.runtime.onStartup.addListener(function(  ) {\u000a\u000a});
-tp89
+tp91
 a(Vchrome.runtime.onInstalled.addListener
 VonInstalled	Chrome runtime
 Vchrome.runtime.onInstalled.addListener(function(  ) {\u000a\u000a});
-tp90
+tp92
 a(Vchrome.runtime.onSuspend.addListener
 VonSuspend	Chrome runtime
 Vchrome.runtime.onSuspend.addListener(function(  ) {\u000a\u000a});
-tp91
+tp93
 a(Vchrome.runtime.onSuspendCanceled.addListener
 VonSuspendCanceled	Chrome runtime
 Vchrome.runtime.onSuspendCanceled.addListener(function(  ) {\u000a\u000a});
-tp92
+tp94
 a(Vchrome.runtime.onUpdateAvailable.addListener
 VonUpdateAvailable	Chrome runtime
 Vchrome.runtime.onUpdateAvailable.addListener(function(  ) {\u000a\u000a});
-tp93
+tp95
 a(Vchrome.runtime.onConnect.addListener
 VonConnect	Chrome runtime
 Vchrome.runtime.onConnect.addListener(function(  ) {\u000a\u000a});
-tp94
+tp96
 a(Vchrome.runtime.onConnectExternal.addListener
 VonConnectExternal	Chrome runtime
 Vchrome.runtime.onConnectExternal.addListener(function(  ) {\u000a\u000a});
-tp95
+tp97
 a(Vchrome.runtime.onMessage.addListener
 VonMessage	Chrome runtime
 Vchrome.runtime.onMessage.addListener(function(  ) {\u000a\u000a});
-tp96
+tp98
 a(Vchrome.runtime.onMessageExternal.addListener
 VonMessageExternal	Chrome runtime
 Vchrome.runtime.onMessageExternal.addListener(function(  ) {\u000a\u000a});
-tp97
+tp99
 a(Vchrome.runtime.onRestartRequired.addListener
 VonRestartRequired	Chrome runtime
 Vchrome.runtime.onRestartRequired.addListener(function(  ) {\u000a\u000a});
-tp98
+tp100
 a(Vchrome.location.watchLocation
 VwatchLocation	Chrome location
 Vchrome.location.watchLocation(name, requestInfo)
-tp99
+tp101
 a(Vchrome.location.clearWatch
 VclearWatch	Chrome location
 Vchrome.location.clearWatch(name)
-tp100
+tp102
 a(Vchrome.location.onLocationUpdate.addListener
 VonLocationUpdate	Chrome location
 Vchrome.location.onLocationUpdate.addListener(function(  ) {\u000a\u000a});
-tp101
+tp103
 a(Vchrome.location.onLocationError.addListener
 VonLocationError	Chrome location
 Vchrome.location.onLocationError.addListener(function(  ) {\u000a\u000a});
-tp102
+tp104
 a(Vchrome.bluetooth.addProfile
 VaddProfile	Chrome bluetooth
 Vchrome.bluetooth.addProfile(profile, callback)
-tp103
+tp105
 a(Vchrome.bluetooth.removeProfile
 VremoveProfile	Chrome bluetooth
 Vchrome.bluetooth.removeProfile(profile, callback)
-tp104
+tp106
 a(Vchrome.bluetooth.getAdapterState
 VgetAdapterState	Chrome bluetooth
 Vchrome.bluetooth.getAdapterState(callback)
-tp105
+tp107
 a(Vchrome.bluetooth.getDevices
 VgetDevices	Chrome bluetooth
 Vchrome.bluetooth.getDevices(options, callback)
-tp106
+tp108
 a(Vchrome.bluetooth.getProfiles
 VgetProfiles	Chrome bluetooth
 Vchrome.bluetooth.getProfiles(options, callback)
-tp107
+tp109
 a(Vchrome.bluetooth.getServices
 VgetServices	Chrome bluetooth
 Vchrome.bluetooth.getServices(options, callback)
-tp108
+tp110
 a(Vchrome.bluetooth.connect
 Vconnect	Chrome bluetooth
 Vchrome.bluetooth.connect(options, callback)
-tp109
+tp111
 a(Vchrome.bluetooth.disconnect
 Vdisconnect	Chrome bluetooth
 Vchrome.bluetooth.disconnect(options, callback)
-tp110
+tp112
 a(Vchrome.bluetooth.read
 Vread	Chrome bluetooth
 Vchrome.bluetooth.read(options, callback)
-tp111
+tp113
 a(Vchrome.bluetooth.write
 Vwrite	Chrome bluetooth
 Vchrome.bluetooth.write(options, callback)
-tp112
+tp114
 a(Vchrome.bluetooth.getLocalOutOfBandPairingData
 VgetLocalOutOfBandPairingData	Chrome bluetooth
 Vchrome.bluetooth.getLocalOutOfBandPairingData(callback)
-tp113
+tp115
 a(Vchrome.bluetooth.setOutOfBandPairingData
 VsetOutOfBandPairingData	Chrome bluetooth
 Vchrome.bluetooth.setOutOfBandPairingData(options, callback)
-tp114
+tp116
 a(Vchrome.bluetooth.startDiscovery
 VstartDiscovery	Chrome bluetooth
 Vchrome.bluetooth.startDiscovery(options, callback)
-tp115
+tp117
 a(Vchrome.bluetooth.stopDiscovery
 VstopDiscovery	Chrome bluetooth
 Vchrome.bluetooth.stopDiscovery(callback)
-tp116
+tp118
 a(Vchrome.bluetooth.onAdapterStateChanged.addListener
 VonAdapterStateChanged	Chrome bluetooth
 Vchrome.bluetooth.onAdapterStateChanged.addListener(function(  ) {\u000a\u000a});
-tp117
+tp119
 a(Vchrome.bluetooth.onConnection.addListener
 VonConnection	Chrome bluetooth
 Vchrome.bluetooth.onConnection.addListener(function(  ) {\u000a\u000a});
-tp118
+tp120
 a(Vchrome.tts.speak
 Vspeak	Chrome tts
 Vchrome.tts.speak(utterance, options, callback)
-tp119
+tp121
 a(Vchrome.tts.stop
 Vstop	Chrome tts
 Vchrome.tts.stop()
-tp120
+tp122
 a(Vchrome.tts.pause
 Vpause	Chrome tts
 Vchrome.tts.pause()
-tp121
+tp123
 a(Vchrome.tts.resume
 Vresume	Chrome tts
 Vchrome.tts.resume()
-tp122
+tp124
 a(Vchrome.tts.isSpeaking
 VisSpeaking	Chrome tts
 Vchrome.tts.isSpeaking(callback)
-tp123
+tp125
 a(Vchrome.tts.getVoices
 VgetVoices	Chrome tts
 Vchrome.tts.getVoices(callback)
-tp124
+tp126
 a(Vchrome.permissions.getAll
 VgetAll	Chrome permissions
 Vchrome.permissions.getAll(callback)
-tp125
+tp127
 a(Vchrome.permissions.contains
 Vcontains	Chrome permissions
 Vchrome.permissions.contains(permissions, callback)
-tp126
+tp128
 a(Vchrome.permissions.request
 Vrequest	Chrome permissions
 Vchrome.permissions.request(permissions, callback)
-tp127
+tp129
 a(Vchrome.permissions.remove
 Vremove	Chrome permissions
 Vchrome.permissions.remove(permissions, callback)
-tp128
+tp130
 a(Vchrome.permissions.onAdded.addListener
 VonAdded	Chrome permissions
 Vchrome.permissions.onAdded.addListener(function(  ) {\u000a\u000a});
-tp129
+tp131
 a(Vchrome.permissions.onRemoved.addListener
 VonRemoved	Chrome permissions
 Vchrome.permissions.onRemoved.addListener(function(  ) {\u000a\u000a});
-tp130
+tp132
 a(Vchrome.system.display.getInfo
 VgetInfo	Chrome system.display
 Vchrome.system.display.getInfo(callback)
-tp131
+tp133
 a(Vchrome.system.display.setDisplayProperties
 VsetDisplayProperties	Chrome system.display
 Vchrome.system.display.setDisplayProperties(id, info, callback)
-tp132
+tp134
 a(Vchrome.system.display.onDisplayChanged.addListener
 VonDisplayChanged	Chrome system.display
 Vchrome.system.display.onDisplayChanged.addListener(function(  ) {\u000a\u000a});
-tp133
+tp135
 a(Vchrome.mediaGalleries.getMediaFileSystems
 VgetMediaFileSystems	Chrome mediaGalleries
 Vchrome.mediaGalleries.getMediaFileSystems(details, callback)
-tp134
+tp136
 a(Vchrome.mediaGalleries.getMediaFileSystemMetadata
 VgetMediaFileSystemMetadata	Chrome mediaGalleries
 Vchrome.mediaGalleries.getMediaFileSystemMetadata(mediaFileSystem)
-tp135
+tp137
 a(Vchrome.power.requestKeepAwake
 VrequestKeepAwake	Chrome power
 Vchrome.power.requestKeepAwake(level)
-tp136
+tp138
 a(Vchrome.power.releaseKeepAwake
 VreleaseKeepAwake	Chrome power
 Vchrome.power.releaseKeepAwake()
-tp137
+tp139
 a(Vchrome.system.memory.getInfo
 VgetInfo	Chrome system.memory
 Vchrome.system.memory.getInfo(callback)
-tp138
+tp140
 a(Vchrome.socket.create
 Vcreate	Chrome socket
 Vchrome.socket.create(type, options, callback)
-tp139
+tp141
 a(Vchrome.socket.destroy
 Vdestroy	Chrome socket
 Vchrome.socket.destroy(socketId)
-tp140
+tp142
 a(Vchrome.socket.connect
 Vconnect	Chrome socket
 Vchrome.socket.connect(socketId, hostname, port, callback)
-tp141
+tp143
 a(Vchrome.socket.bind
 Vbind	Chrome socket
 Vchrome.socket.bind(socketId, address, port, callback)
-tp142
+tp144
 a(Vchrome.socket.disconnect
 Vdisconnect	Chrome socket
 Vchrome.socket.disconnect(socketId)
-tp143
+tp145
 a(Vchrome.socket.read
 Vread	Chrome socket
 Vchrome.socket.read(socketId, bufferSize, callback)
-tp144
+tp146
 a(Vchrome.socket.write
 Vwrite	Chrome socket
 Vchrome.socket.write(socketId, data, callback)
-tp145
+tp147
 a(Vchrome.socket.recvFrom
 VrecvFrom	Chrome socket
 Vchrome.socket.recvFrom(socketId, bufferSize, callback)
-tp146
+tp148
 a(Vchrome.socket.sendTo
 VsendTo	Chrome socket
 Vchrome.socket.sendTo(socketId, data, address, port, callback)
-tp147
+tp149
 a(Vchrome.socket.listen
 Vlisten	Chrome socket
 Vchrome.socket.listen(socketId, address, port, backlog, callback)
-tp148
+tp150
 a(Vchrome.socket.accept
 Vaccept	Chrome socket
 Vchrome.socket.accept(socketId, callback)
-tp149
+tp151
 a(Vchrome.socket.setKeepAlive
 VsetKeepAlive	Chrome socket
 Vchrome.socket.setKeepAlive(socketId, enable, delay, callback)
-tp150
+tp152
 a(Vchrome.socket.setNoDelay
 VsetNoDelay	Chrome socket
 Vchrome.socket.setNoDelay(socketId, noDelay, callback)
-tp151
+tp153
 a(Vchrome.socket.getInfo
 VgetInfo	Chrome socket
 Vchrome.socket.getInfo(socketId, callback)
-tp152
+tp154
 a(Vchrome.socket.getNetworkList
 VgetNetworkList	Chrome socket
 Vchrome.socket.getNetworkList(callback)
-tp153
+tp155
 a(Vchrome.socket.joinGroup
 VjoinGroup	Chrome socket
 Vchrome.socket.joinGroup(socketId, address, callback)
-tp154
+tp156
 a(Vchrome.socket.leaveGroup
 VleaveGroup	Chrome socket
 Vchrome.socket.leaveGroup(socketId, address, callback)
-tp155
+tp157
 a(Vchrome.socket.setMulticastTimeToLive
 VsetMulticastTimeToLive	Chrome socket
 Vchrome.socket.setMulticastTimeToLive(socketId, ttl, callback)
-tp156
+tp158
 a(Vchrome.socket.setMulticastLoopbackMode
 VsetMulticastLoopbackMode	Chrome socket
 Vchrome.socket.setMulticastLoopbackMode(socketId, enabled, callback)
-tp157
+tp159
 a(Vchrome.socket.getJoinedGroups
 VgetJoinedGroups	Chrome socket
 Vchrome.socket.getJoinedGroups(socketId, callback)
-tp158
+tp160
 a(Vchrome.syncFileSystem.requestFileSystem
 VrequestFileSystem	Chrome syncFileSystem
 Vchrome.syncFileSystem.requestFileSystem(callback)
-tp159
+tp161
 a(Vchrome.syncFileSystem.setConflictResolutionPolicy
 VsetConflictResolutionPolicy	Chrome syncFileSystem
 Vchrome.syncFileSystem.setConflictResolutionPolicy(policy, callback)
-tp160
+tp162
 a(Vchrome.syncFileSystem.getConflictResolutionPolicy
 VgetConflictResolutionPolicy	Chrome syncFileSystem
 Vchrome.syncFileSystem.getConflictResolutionPolicy(callback)
-tp161
+tp163
 a(Vchrome.syncFileSystem.getUsageAndQuota
 VgetUsageAndQuota	Chrome syncFileSystem
 Vchrome.syncFileSystem.getUsageAndQuota(fileSystem, callback)
-tp162
+tp164
 a(Vchrome.syncFileSystem.getFileStatus
 VgetFileStatus	Chrome syncFileSystem
 Vchrome.syncFileSystem.getFileStatus(fileEntry, callback)
-tp163
+tp165
 a(Vchrome.syncFileSystem.getFileStatuses
 VgetFileStatuses	Chrome syncFileSystem
 Vchrome.syncFileSystem.getFileStatuses(fileEntries, callback)
-tp164
+tp166
 a(Vchrome.syncFileSystem.getServiceStatus
 VgetServiceStatus	Chrome syncFileSystem
 Vchrome.syncFileSystem.getServiceStatus(callback)
-tp165
+tp167
 a(Vchrome.syncFileSystem.onServiceStatusChanged.addListener
 VonServiceStatusChanged	Chrome syncFileSystem
 Vchrome.syncFileSystem.onServiceStatusChanged.addListener(function(  ) {\u000a\u000a});
-tp166
+tp168
 a(Vchrome.syncFileSystem.onFileStatusChanged.addListener
 VonFileStatusChanged	Chrome syncFileSystem
 Vchrome.syncFileSystem.onFileStatusChanged.addListener(function(  ) {\u000a\u000a});
-tp167
+tp169
 a(Vchrome.storage.onChanged.addListener
 VonChanged	Chrome storage
 Vchrome.storage.onChanged.addListener(function(  ) {\u000a\u000a});
-tp168
+tp170
 a(Vchrome.pushMessaging.getChannelId
 VgetChannelId	Chrome pushMessaging
 Vchrome.pushMessaging.getChannelId(interactive, callback)
-tp169
+tp171
 a(Vchrome.pushMessaging.onMessage.addListener
 VonMessage	Chrome pushMessaging
 Vchrome.pushMessaging.onMessage.addListener(function(  ) {\u000a\u000a});
-tp170
+tp172
 a(Vchrome.audio.getInfo
 VgetInfo	Chrome audio
 Vchrome.audio.getInfo(callback)
-tp171
+tp173
 a(Vchrome.audio.setActiveDevices
 VsetActiveDevices	Chrome audio
 Vchrome.audio.setActiveDevices(ids, callback)
-tp172
+tp174
 a(Vchrome.audio.setProperties
 VsetProperties	Chrome audio
 Vchrome.audio.setProperties(id, properties, callback)
-tp173
+tp175
 a(Vchrome.audio.onDeviceChanged.addListener
 VonDeviceChanged	Chrome audio
 Vchrome.audio.onDeviceChanged.addListener(function(  ) {\u000a\u000a});
-tp174
+tp176
 a.
